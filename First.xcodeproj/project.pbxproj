@@ -33,6 +33,7 @@
 		F4477CE01B551C9E0062C2A5 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CD01B551C9E0062C2A5 /* white_chocolate_donut.jpg */; };
 		F4477CE61B5520C60062C2A5 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4477CE51B5520C60062C2A5 /* SimpleTableCell.xib */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
+		F4477CEE1B553A2B0062C2A5 /* even.png in Resources */ = {isa = PBXBuildFile; fileRef = F4477CED1B553A2B0062C2A5 /* even.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		F4477CE51B5520C60062C2A5 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 		F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		F4477CED1B553A2B0062C2A5 /* even.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = even.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		F4477C8D1B54ECE50062C2A5 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F4477CED1B553A2B0062C2A5 /* even.png */,
 				F4477CC11B551C9E0062C2A5 /* angry_birds_cake.jpg */,
 				F4477CC21B551C9E0062C2A5 /* creme_brelee.jpg */,
 				F4477CC31B551C9E0062C2A5 /* egg_benedict.jpg */,
@@ -301,6 +304,7 @@
 			files = (
 				F4477CD41B551C9E0062C2A5 /* full_breakfast.jpg in Resources */,
 				F4477C9E1B54ECE50062C2A5 /* LaunchScreen.storyboard in Resources */,
+				F4477CEE1B553A2B0062C2A5 /* even.png in Resources */,
 				F4477CD21B551C9E0062C2A5 /* creme_brelee.jpg in Resources */,
 				F4477CDF1B551C9E0062C2A5 /* vegetable_curry.jpg in Resources */,
 				F4477CDE1B551C9E0062C2A5 /* thai_shrimp_cake.jpg in Resources */,
