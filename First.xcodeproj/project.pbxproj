@@ -32,6 +32,12 @@
 		F4477CDF1B551C9E0062C2A5 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CCF1B551C9E0062C2A5 /* vegetable_curry.jpg */; };
 		F4477CE01B551C9E0062C2A5 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CD01B551C9E0062C2A5 /* white_chocolate_donut.jpg */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
+		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
+		F4AFC5E31B568CFA00A5F9C7 /* loc.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E21B568CFA00A5F9C7 /* loc.png */; };
+		F4AFC5E71B568D7C00A5F9C7 /* locic.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E41B568D7C00A5F9C7 /* locic.png */; };
+		F4AFC5E81B568D7C00A5F9C7 /* locq.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E51B568D7C00A5F9C7 /* locq.png */; };
+		F4AFC5E91B568D7C00A5F9C7 /* ven.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E61B568D7C00A5F9C7 /* ven.png */; };
+		F4AFC5EB1B56958100A5F9C7 /* detback.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5EA1B56958100A5F9C7 /* detback.png */; };
 		F4D657D81B561D04004D7D24 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D657D71B561D04004D7D24 /* back.png */; };
 		F4D657DC1B563D57004D7D24 /* details.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4D657DB1B562D8A004D7D24 /* details.txt */; };
 		F4D657DF1B5665B7004D7D24 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D657DD1B5665B7004D7D24 /* cal.png */; };
@@ -91,6 +97,13 @@
 		F4477CD01B551C9E0062C2A5 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
 		F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		F4AFC5E21B568CFA00A5F9C7 /* loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loc.png; sourceTree = "<group>"; };
+		F4AFC5E41B568D7C00A5F9C7 /* locic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locic.png; sourceTree = "<group>"; };
+		F4AFC5E51B568D7C00A5F9C7 /* locq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locq.png; sourceTree = "<group>"; };
+		F4AFC5E61B568D7C00A5F9C7 /* ven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ven.png; sourceTree = "<group>"; };
+		F4AFC5EA1B56958100A5F9C7 /* detback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detback.png; sourceTree = "<group>"; };
 		F4D657D71B561D04004D7D24 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		F4D657DB1B562D8A004D7D24 /* details.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = details.txt; sourceTree = "<group>"; };
 		F4D657DD1B5665B7004D7D24 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
@@ -146,9 +159,16 @@
 		F4477C8D1B54ECE50062C2A5 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F4AFC5EA1B56958100A5F9C7 /* detback.png */,
+				F4AFC5E41B568D7C00A5F9C7 /* locic.png */,
+				F4AFC5E51B568D7C00A5F9C7 /* locq.png */,
+				F4AFC5E61B568D7C00A5F9C7 /* ven.png */,
+				F4AFC5E21B568CFA00A5F9C7 /* loc.png */,
 				F4D657E11B567195004D7D24 /* ti.png */,
 				F4D657DD1B5665B7004D7D24 /* cal.png */,
 				F4D657DE1B5665B7004D7D24 /* time.png */,
+				F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */,
+				F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */,
 				F4D657D71B561D04004D7D24 /* back.png */,
 				F4477CC11B551C9E0062C2A5 /* angry_birds_cake.jpg */,
 				F4477CC21B551C9E0062C2A5 /* creme_brelee.jpg */,
@@ -313,6 +333,7 @@
 			files = (
 				F4D657E01B5665B7004D7D24 /* time.png in Resources */,
 				F4D657DC1B563D57004D7D24 /* details.txt in Resources */,
+				F4AFC5E81B568D7C00A5F9C7 /* locq.png in Resources */,
 				F4477CD41B551C9E0062C2A5 /* full_breakfast.jpg in Resources */,
 				F4477C9E1B54ECE50062C2A5 /* LaunchScreen.storyboard in Resources */,
 				F4477CD21B551C9E0062C2A5 /* creme_brelee.jpg in Resources */,
@@ -325,8 +346,10 @@
 				F4477CD81B551C9E0062C2A5 /* hamburger.jpg in Resources */,
 				F4477CDC1B551C9E0062C2A5 /* noodle_with_bbq_pork.jpg in Resources */,
 				F4D657D81B561D04004D7D24 /* back.png in Resources */,
+				F4AFC5EB1B56958100A5F9C7 /* detback.png in Resources */,
 				F4477CD11B551C9E0062C2A5 /* angry_birds_cake.jpg in Resources */,
 				F4477C991B54ECE50062C2A5 /* Main.storyboard in Resources */,
+				F4AFC5E71B568D7C00A5F9C7 /* locic.png in Resources */,
 				F4477CD61B551C9E0062C2A5 /* ham_and_cheese_panini.jpg in Resources */,
 				F4477CD51B551C9E0062C2A5 /* green_tea.jpg in Resources */,
 				F4477CDB1B551C9E0062C2A5 /* mushroom_risotto.jpg in Resources */,
@@ -334,7 +357,9 @@
 				F4D657DF1B5665B7004D7D24 /* cal.png in Resources */,
 				F4477CD31B551C9E0062C2A5 /* egg_benedict.jpg in Resources */,
 				F4477CD71B551C9E0062C2A5 /* ham_and_egg_sandwich.jpg in Resources */,
+				F4AFC5E31B568CFA00A5F9C7 /* loc.png in Resources */,
 				F4477CDA1B551C9E0062C2A5 /* japanese_noodle_with_pork.jpg in Resources */,
+				F4AFC5E91B568D7C00A5F9C7 /* ven.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
+				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
