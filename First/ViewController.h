@@ -11,7 +11,7 @@
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UILabel *mytext;
-    NSArray *tableData;
+    NSMutableArray *tableData;
      NSArray *thumbnails;
     NSArray *prepTime;
 

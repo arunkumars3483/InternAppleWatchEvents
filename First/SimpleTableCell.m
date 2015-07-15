@@ -13,7 +13,7 @@
 
 @synthesize nameLabel = _nameLabel;
 @synthesize prepTimeLabel = _prepTimeLabel;
-@synthesize thumbnailImageView = _thumbnailImageView;
+//@synthesize thumbnailImageView = _thumbnailImageView;
 
 - (void)awakeFromNib {
     // Initialization code
