@@ -14,9 +14,15 @@
 
 @implementation DetailsViewController
 
+
+@synthesize recipeLabel;
+@synthesize recipeName;
+@synthesize bc;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    recipeLabel.text = recipeName;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"detback.png"]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -12,7 +12,11 @@
 
 
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
-@property (nonatomic, weak) IBOutlet UILabel *prepTimeLabel;
-//@property (nonatomic, weak) IBOutlet UIImageView *thumbnailImageView;
+@property (nonatomic, weak) IBOutlet UILabel *venue;
+@property (nonatomic, weak) IBOutlet UIImageView *ti;
+@property (nonatomic, weak) IBOutlet UIImageView *cl;
+@property (nonatomic, weak) IBOutlet UILabel *time;
+@property (nonatomic, weak) IBOutlet UILabel *date;
+@property (nonatomic, weak) IBOutlet UILabel *rating;
 
 @end

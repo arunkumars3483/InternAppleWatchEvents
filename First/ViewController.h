@@ -12,12 +12,18 @@
 {
     IBOutlet UILabel *mytext;
     NSMutableArray *tableData;
+    NSMutableArray *tme;
+    NSMutableArray *dat;
+    NSMutableArray *ven;
+NSMutableArray *rat;
+
      NSArray *thumbnails;
     NSArray *prepTime;
 
 }
     -(IBAction)showMessage;
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 
 @end

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailsViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
+@property (nonatomic, strong) IBOutlet UIView *bc;
+@property (nonatomic, strong) NSString *recipeName;
+
 
 @end

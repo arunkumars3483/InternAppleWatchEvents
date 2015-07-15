@@ -8,16 +8,23 @@
 
 #import "ViewController.h"
 #import "SimpleTableCell.h"
+#import "DetailsViewController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+@synthesize tableView;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
    tableData=[[NSMutableArray alloc] init];
+    tme=[[NSMutableArray alloc] init];
+    rat=[[NSMutableArray alloc] init];
+    dat=[[NSMutableArray alloc] init];
+
+    ven=[[NSMutableArray alloc] init];
+
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"details" ofType:@"txt" ];
        NSString* content = [NSString stringWithContentsOfFile:filePath  encoding:NSUTF8StringEncoding error:NULL];
     
@@ -30,9 +37,18 @@
         for (int i=0; i<[publicTimeline count]; i++) {
             NSDictionary *arrayResult = [publicTimeline objectAtIndex:i];
             //NSLog(@"name=%@",[arrayResult objectForKey:@"colorName"]);
-            NSString *nam=[arrayResult objectForKey:@"colorName"];
+            NSString *nam=[arrayResult objectForKey:@"Name"];
+             NSString *dt=[arrayResult objectForKey:@"Date"];
+             NSString *vn=[arrayResult objectForKey:@"Venue"];
+             NSString *tm=[arrayResult objectForKey:@"Time"];
+            NSString *rt=[arrayResult objectForKey:@"Rating"];
+
             [tableData addObject:  nam];
-            NSLog(@"name=%@",[arrayResult objectForKey:@"colorName"]);
+            [tme addObject:  tm];
+            [dat addObject:  dt];
+            [ven addObject:  vn];
+            [rat addObject:rt];
+            NSLog(@"name=%@",[arrayResult objectForKey:@"Name"]);
             
         }
           }
@@ -59,21 +75,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
-    
-    SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    if (cell == nil)
-    {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
-   // cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"even.png"] ] ;
-   cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
-    cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
-    */
-    static NSString *simpleTableIdentifier = @"RecipeCell";
+       static NSString *simpleTableIdentifier = @"RecipeCell";
     
    // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -84,7 +86,13 @@
     
     //cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
     cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
-    //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    cell.time.text=[tme objectAtIndex:indexPath.row];
+    cell.venue.text=[ven objectAtIndex:indexPath.row];
+    cell.date.text=[dat objectAtIndex:indexPath.row];
+    NSString *s =[rat objectAtIndex:indexPath.row];
+
+    s = [s stringByAppendingString:@"/5"];
+    cell.rating.text= s;   //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
 cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back.png"] ] ;
     
@@ -92,7 +100,7 @@ cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120;
+    return 167;
 }
 /*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,4 +113,12 @@ cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b
     
 }
  */
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showRecipeDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        DetailsViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [tableData objectAtIndex:indexPath.row];
+    }
+}
+
 @end

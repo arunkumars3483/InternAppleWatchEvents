@@ -12,9 +12,12 @@
 
 
 @synthesize nameLabel = _nameLabel;
-@synthesize prepTimeLabel = _prepTimeLabel;
-//@synthesize thumbnailImageView = _thumbnailImageView;
-
+@synthesize time = _time;
+@synthesize  venue= _venue;
+@synthesize date = _date;
+@synthesize rating = _Rating;
+@synthesize ti = _ti;
+@synthesize cl = _cal;
 - (void)awakeFromNib {
     // Initialization code
 }
