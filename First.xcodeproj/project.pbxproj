@@ -31,9 +31,8 @@
 		F4477CDE1B551C9E0062C2A5 /* thai_shrimp_cake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CCE1B551C9E0062C2A5 /* thai_shrimp_cake.jpg */; };
 		F4477CDF1B551C9E0062C2A5 /* vegetable_curry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CCF1B551C9E0062C2A5 /* vegetable_curry.jpg */; };
 		F4477CE01B551C9E0062C2A5 /* white_chocolate_donut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4477CD01B551C9E0062C2A5 /* white_chocolate_donut.jpg */; };
-		F4477CE61B5520C60062C2A5 /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4477CE51B5520C60062C2A5 /* SimpleTableCell.xib */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
-		F4477CEE1B553A2B0062C2A5 /* even.png in Resources */ = {isa = PBXBuildFile; fileRef = F4477CED1B553A2B0062C2A5 /* even.png */; };
+		F4D657D81B561D04004D7D24 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D657D71B561D04004D7D24 /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +85,9 @@
 		F4477CCE1B551C9E0062C2A5 /* thai_shrimp_cake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thai_shrimp_cake.jpg; sourceTree = "<group>"; };
 		F4477CCF1B551C9E0062C2A5 /* vegetable_curry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegetable_curry.jpg; sourceTree = "<group>"; };
 		F4477CD01B551C9E0062C2A5 /* white_chocolate_donut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white_chocolate_donut.jpg; sourceTree = "<group>"; };
-		F4477CE51B5520C60062C2A5 /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 		F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
-		F4477CED1B553A2B0062C2A5 /* even.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = even.png; sourceTree = "<group>"; };
+		F4D657D71B561D04004D7D24 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,7 @@
 		F4477C8D1B54ECE50062C2A5 /* First */ = {
 			isa = PBXGroup;
 			children = (
-				F4477CED1B553A2B0062C2A5 /* even.png */,
+				F4D657D71B561D04004D7D24 /* back.png */,
 				F4477CC11B551C9E0062C2A5 /* angry_birds_cake.jpg */,
 				F4477CC21B551C9E0062C2A5 /* creme_brelee.jpg */,
 				F4477CC31B551C9E0062C2A5 /* egg_benedict.jpg */,
@@ -164,7 +162,6 @@
 				F4477C971B54ECE50062C2A5 /* Main.storyboard */,
 				F4477C9A1B54ECE50062C2A5 /* Assets.xcassets */,
 				F4477C9C1B54ECE50062C2A5 /* LaunchScreen.storyboard */,
-				F4477CE51B5520C60062C2A5 /* SimpleTableCell.xib */,
 				F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */,
 				F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */,
 				F4477C9F1B54ECE50062C2A5 /* Info.plist */,
@@ -304,7 +301,6 @@
 			files = (
 				F4477CD41B551C9E0062C2A5 /* full_breakfast.jpg in Resources */,
 				F4477C9E1B54ECE50062C2A5 /* LaunchScreen.storyboard in Resources */,
-				F4477CEE1B553A2B0062C2A5 /* even.png in Resources */,
 				F4477CD21B551C9E0062C2A5 /* creme_brelee.jpg in Resources */,
 				F4477CDF1B551C9E0062C2A5 /* vegetable_curry.jpg in Resources */,
 				F4477CDE1B551C9E0062C2A5 /* thai_shrimp_cake.jpg in Resources */,
@@ -312,8 +308,8 @@
 				F4477CE01B551C9E0062C2A5 /* white_chocolate_donut.jpg in Resources */,
 				F4477CD91B551C9E0062C2A5 /* instant_noodle_with_egg.jpg in Resources */,
 				F4477CD81B551C9E0062C2A5 /* hamburger.jpg in Resources */,
-				F4477CE61B5520C60062C2A5 /* SimpleTableCell.xib in Resources */,
 				F4477CDC1B551C9E0062C2A5 /* noodle_with_bbq_pork.jpg in Resources */,
+				F4D657D81B561D04004D7D24 /* back.png in Resources */,
 				F4477CD11B551C9E0062C2A5 /* angry_birds_cake.jpg in Resources */,
 				F4477C991B54ECE50062C2A5 /* Main.storyboard in Resources */,
 				F4477CD61B551C9E0062C2A5 /* ham_and_cheese_panini.jpg in Resources */,
@@ -574,6 +570,7 @@
 				F4477CBA1B54ECE50062C2A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4477CBB1B54ECE50062C2A5 /* Build configuration list for PBXNativeTarget "FirstTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +579,7 @@
 				F4477CBD1B54ECE50062C2A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4477CBE1B54ECE50062C2A5 /* Build configuration list for PBXNativeTarget "FirstUITests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +588,7 @@
 				F4477CC01B54ECE50062C2A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
