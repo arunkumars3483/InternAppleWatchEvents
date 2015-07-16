@@ -8,7 +8,7 @@
 
 #import "DetailsViewController.h"
 #import "PlaceAnnotation.h"
-#import "MapTouchView.h"
+#import "MapScreenControllerViewController.h"
 @interface DetailsViewController ()
 @property (nonatomic, strong) PlaceAnnotation *annotation;
 
@@ -60,26 +60,9 @@
     self.mapView.delegate = self;
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"detback.png"]];
-     [self.view insertSubview:mapTouchView aboveSubview:mapView];
-   // mapTouchView = [[MapTouchView alloc] initWithBlockForTouchesBegan:^(NSSet *touches, UIEvent *event) {
-   //     [self displayFullMap];
-   // }];
     
 }
 
-- (id)init {
-    self=[super init];
-    mapTouchView = [[MapTouchView alloc] initWithBlockForTouchesBegan:^(NSSet *touches, UIEvent *event) {
-        [self displayFullMap];
-        NSLog(@"user has tapped the map");
-    }];
-    
-    return self;
-}
-- (void)displayFullMap {
-    NSLog(@"user has tapped the map");
-    
-}
 
 
 
@@ -97,12 +80,12 @@
     // we use the delta values to indicate the desired zoom level of the map,
     //      (smaller delta values corresponding to a higher zoom level)
     //
-    newRegion.span.latitudeDelta = 0.2;
-    newRegion.span.longitudeDelta = 0.2;
+    newRegion.span.latitudeDelta = 0.3;
+    newRegion.span.longitudeDelta = 0.3;
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     
-    request.naturalLanguageQuery = @"trivandrum";
+    request.naturalLanguageQuery = Location;  //location String Queries
     request.region = newRegion;
     
     MKLocalSearchCompletionHandler completionHandler = ^(MKLocalSearchResponse *response, NSError *error)
@@ -155,27 +138,7 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-  
-    mapTouchView.frame = mapView.frame;
-}
 
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    NSLog(@"%@", [locations lastObject]);
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 80, 80);
-    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
-}
 
 /*
 #pragma mark - Navigation
@@ -186,5 +149,15 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Fullscreen"]) {
+        
+        MapScreenControllerViewController *destt = segue.destinationViewController;
+        destt.boundingRegion= self.boundingRegion;
+        destt.mapItem=[self.places objectAtIndex:0];
+        
+                
+        
+    }
+}
 @end

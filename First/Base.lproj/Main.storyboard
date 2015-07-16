@@ -212,15 +212,6 @@
                                     <rect key="frame" x="0.0" y="64" width="400" height="487"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-Z9-I4x">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <color key="textColor" red="0.70093513257575757" green="0.70093513257575757" blue="0.70093513257575757" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="9" y="164" width="153" height="36"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePQ-no-ynE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -372,15 +363,15 @@
                                     <rect key="frame" x="9" y="264" width="23" height="19"/>
                                 </variation>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHK-qb-Ggx">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="79" width="152" height="107"/>
-                                </variation>
-                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ekz-k8-RDs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHK-qb-Ggx">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
+                                        </variation>
+                                    </mapView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-ub-3U0">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="Button">
@@ -389,27 +380,40 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
                                         </variation>
+                                        <connections>
+                                            <segue destination="ZA3-t5-0AA" kind="show" identifier="Fullscreen" id="XuS-K0-tdn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <variation key="default">
                                     <mask key="subviews">
+                                        <exclude reference="nHK-qb-Ggx"/>
                                         <exclude reference="7PU-ub-3U0"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="79" width="152" height="107"/>
+                                    <rect key="frame" x="165" y="142" width="152" height="107"/>
                                     <mask key="subviews">
+                                        <include reference="nHK-qb-Ggx"/>
                                         <include reference="7PU-ub-3U0"/>
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-Z9-I4x">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.70093513257575757" green="0.70093513257575757" blue="0.70093513257575757" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="92" width="290" height="36"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="c1c-xl-2CZ"/>
-                                <exclude reference="H8j-Z9-I4x"/>
                                 <exclude reference="ePQ-no-ynE"/>
                                 <exclude reference="pe2-Tg-y0Y"/>
                                 <exclude reference="YL1-Yb-bpe"/>
@@ -420,14 +424,13 @@
                                 <exclude reference="nE2-gD-Ojw"/>
                                 <exclude reference="bGk-Y4-kci"/>
                                 <exclude reference="paS-Q2-Uar"/>
-                                <exclude reference="nHK-qb-Ggx"/>
                                 <exclude reference="Ekz-k8-RDs"/>
+                                <exclude reference="H8j-Z9-I4x"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="c1c-xl-2CZ"/>
-                                <include reference="H8j-Z9-I4x"/>
                                 <include reference="ePQ-no-ynE"/>
                                 <include reference="pe2-Tg-y0Y"/>
                                 <include reference="YL1-Yb-bpe"/>
@@ -438,8 +441,8 @@
                                 <include reference="nE2-gD-Ojw"/>
                                 <include reference="bGk-Y4-kci"/>
                                 <include reference="paS-Q2-Uar"/>
-                                <include reference="nHK-qb-Ggx"/>
                                 <include reference="Ekz-k8-RDs"/>
+                                <include reference="H8j-Z9-I4x"/>
                             </mask>
                         </variation>
                     </view>
@@ -450,7 +453,6 @@
                         <outlet property="dat" destination="3v9-kl-VEb" id="OTa-rB-0Cz"/>
                         <outlet property="des" destination="mif-Zp-0fr" id="NId-Ew-1p9"/>
                         <outlet property="loc" destination="ePQ-no-ynE" id="JWz-Ax-ZaR"/>
-                        <outlet property="mapTouchView" destination="Ekz-k8-RDs" id="oc0-Tt-Z3B"/>
                         <outlet property="mapView" destination="nHK-qb-Ggx" id="oEU-hR-Wgq"/>
                         <outlet property="rat" destination="AuD-Tc-SeM" id="gtE-UP-pgw"/>
                         <outlet property="recipeLabel" destination="H8j-Z9-I4x" id="E0G-TU-64y"/>
@@ -460,6 +462,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suj-gf-73u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="331.5" y="194"/>
+        </scene>
+        <!--Map Screen Controller View Controller-->
+        <scene sceneID="1Yn-Yg-cpU">
+            <objects>
+                <viewController id="ZA3-t5-0AA" customClass="MapScreenControllerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZF-M4-kug"/>
+                        <viewControllerLayoutGuide type="bottom" id="1bb-AD-gWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kbd-EW-EEf">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="l6b-mB-xEe">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="458"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="l6b-mB-xEe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="l6b-mB-xEe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="l6b-mB-xEe" id="THn-62-sqK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3md-py-xQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="177"/>
         </scene>
     </scenes>
     <resources>

@@ -11,7 +11,7 @@
 #import <CoreLocation/Corelocation.h>
 @interface DetailsViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
 {
-    IBOutlet UIView* mapTouchView;
+    
 }
 
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
