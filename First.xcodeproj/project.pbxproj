@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646CF1B577F34003A3296 /* CoreLocation.framework */; };
+		F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
 		F4477C901B54ECE50062C2A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C921B54ECE50062C2A5 /* AppDelegate.m */; };
 		F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C951B54ECE50062C2A5 /* ViewController.m */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F44646CF1B577F34003A3296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F44646D11B577F52003A3296 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F4477C8B1B54ECE50062C2A5 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4477C8F1B54ECE50062C2A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4477C911B54ECE50062C2A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */,
+				F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +113,8 @@
 		F4477C821B54ECE50062C2A5 = {
 			isa = PBXGroup;
 			children = (
+				F44646D11B577F52003A3296 /* MapKit.framework */,
+				F44646CF1B577F34003A3296 /* CoreLocation.framework */,
 				F4477C8D1B54ECE50062C2A5 /* First */,
 				F4477CA71B54ECE50062C2A5 /* FirstTests */,
 				F4477CB21B54ECE50062C2A5 /* FirstUITests */,
@@ -135,13 +143,13 @@
 				F4D657E11B567195004D7D24 /* ti.png */,
 				F4D657DD1B5665B7004D7D24 /* cal.png */,
 				F4D657DE1B5665B7004D7D24 /* time.png */,
-				F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */,
-				F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */,
 				F4D657D71B561D04004D7D24 /* back.png */,
 				F4477C911B54ECE50062C2A5 /* AppDelegate.h */,
 				F4477C921B54ECE50062C2A5 /* AppDelegate.m */,
 				F4477C941B54ECE50062C2A5 /* ViewController.h */,
 				F4477C951B54ECE50062C2A5 /* ViewController.m */,
+				F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */,
+				F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */,
 				F4477C971B54ECE50062C2A5 /* Main.storyboard */,
 				F4477C9A1B54ECE50062C2A5 /* Assets.xcassets */,
 				F4477C9C1B54ECE50062C2A5 /* LaunchScreen.storyboard */,
