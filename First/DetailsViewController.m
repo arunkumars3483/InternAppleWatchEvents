@@ -134,9 +134,14 @@
 
     
     
-    
 }
 
+- (IBAction)dismisswindow
+{
+    [self.navigationController popViewControllerAnimated:YES];
+
+   
+}
 
 
 

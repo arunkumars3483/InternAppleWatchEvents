@@ -109,7 +109,8 @@
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
 cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back.png"] ] ;
     
-    return cell;}
+    return cell;
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

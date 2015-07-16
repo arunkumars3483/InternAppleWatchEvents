@@ -13,7 +13,7 @@
 {
     
 }
-
+-(IBAction)dismisswindow;
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
 @property (nonatomic, strong) IBOutlet UIView *bc;
 @property (nonatomic, strong) NSString *recipeName;
