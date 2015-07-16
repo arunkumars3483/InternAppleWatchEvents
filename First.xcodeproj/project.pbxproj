@@ -19,7 +19,7 @@
 		F4477CA91B54ECE50062C2A5 /* FirstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CA81B54ECE50062C2A5 /* FirstTests.m */; };
 		F4477CB41B54ECE50062C2A5 /* FirstUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CB31B54ECE50062C2A5 /* FirstUITests.m */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
-		F492477C1B57ABBE008B26EC /* MapTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F492477B1B57ABBE008B26EC /* MapTouchView.m */; };
+		F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */; };
 		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
 		F4AFC5E31B568CFA00A5F9C7 /* loc.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E21B568CFA00A5F9C7 /* loc.png */; };
 		F4AFC5E71B568D7C00A5F9C7 /* locic.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E41B568D7C00A5F9C7 /* locic.png */; };
@@ -73,8 +73,8 @@
 		F4477CB51B54ECE50062C2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
-		F492477A1B57ABBE008B26EC /* MapTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTouchView.h; sourceTree = "<group>"; };
-		F492477B1B57ABBE008B26EC /* MapTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTouchView.m; sourceTree = "<group>"; };
+		F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScreenControllerViewController.h; sourceTree = "<group>"; };
+		F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapScreenControllerViewController.m; sourceTree = "<group>"; };
 		F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F4AFC5E21B568CFA00A5F9C7 /* loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loc.png; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 				F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */,
 				F4477C9F1B54ECE50062C2A5 /* Info.plist */,
 				F4477C8E1B54ECE50062C2A5 /* Supporting Files */,
-				F492477A1B57ABBE008B26EC /* MapTouchView.h */,
-				F492477B1B57ABBE008B26EC /* MapTouchView.m */,
+				F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */,
+				F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -341,10 +341,10 @@
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
 				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
 				F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */,
-				F492477C1B57ABBE008B26EC /* MapTouchView.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
+				F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
