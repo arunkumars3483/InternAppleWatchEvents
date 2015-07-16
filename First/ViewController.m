@@ -24,7 +24,10 @@
     dat=[[NSMutableArray alloc] init];
 
     ven=[[NSMutableArray alloc] init];
-
+    description=[[NSMutableArray alloc] init];
+    EventId=[[NSMutableArray alloc] init];
+    Address=[[NSMutableArray alloc] init];
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"details" ofType:@"txt" ];
        NSString* content = [NSString stringWithContentsOfFile:filePath  encoding:NSUTF8StringEncoding error:NULL];
     
@@ -39,15 +42,25 @@
             //NSLog(@"name=%@",[arrayResult objectForKey:@"colorName"]);
             NSString *nam=[arrayResult objectForKey:@"Name"];
              NSString *dt=[arrayResult objectForKey:@"Date"];
-             NSString *vn=[arrayResult objectForKey:@"Venue"];
+             NSString *vn=[arrayResult objectForKey:@"Location"];
              NSString *tm=[arrayResult objectForKey:@"Time"];
             NSString *rt=[arrayResult objectForKey:@"Rating"];
+            NSString *Id=[arrayResult objectForKey:@"Id"];
+            NSString *desc=[arrayResult objectForKey:@"Description"];
+            NSString *addr=[arrayResult objectForKey:@"Address"];
 
             [tableData addObject:  nam];
             [tme addObject:  tm];
             [dat addObject:  dt];
             [ven addObject:  vn];
             [rat addObject:rt];
+            [description addObject:desc];
+            [EventId addObject:Id];
+            
+            [Address addObject:addr];
+
+
+
             NSLog(@"name=%@",[arrayResult objectForKey:@"Name"]);
             
         }
@@ -118,6 +131,15 @@ cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         DetailsViewController *destViewController = segue.destinationViewController;
         destViewController.recipeName = [tableData objectAtIndex:indexPath.row];
+        destViewController.ID = [EventId objectAtIndex:indexPath.row];
+        destViewController.Location = [ven objectAtIndex:indexPath.row];
+        destViewController.Date = [dat objectAtIndex:indexPath.row];
+        destViewController.Time = [tme objectAtIndex:indexPath.row];
+        destViewController.Description = [description objectAtIndex:indexPath.row];
+        destViewController.Rating = [rat objectAtIndex:indexPath.row];
+        destViewController.Address = [Address objectAtIndex:indexPath.row];
+        
+        
     }
 }
 

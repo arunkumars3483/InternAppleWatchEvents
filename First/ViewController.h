@@ -16,7 +16,9 @@
     NSMutableArray *dat;
     NSMutableArray *ven;
 NSMutableArray *rat;
-
+NSMutableArray *description;
+    NSMutableArray *EventId;
+    NSMutableArray *Address;
      NSArray *thumbnails;
     NSArray *prepTime;
 
