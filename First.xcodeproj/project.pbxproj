@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646CF1B577F34003A3296 /* CoreLocation.framework */; };
 		F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
+		F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F44646D61B578EF8003A3296 /* PlaceAnnotation.m */; };
 		F4477C901B54ECE50062C2A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C921B54ECE50062C2A5 /* AppDelegate.m */; };
 		F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C951B54ECE50062C2A5 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 		F4477CA91B54ECE50062C2A5 /* FirstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CA81B54ECE50062C2A5 /* FirstTests.m */; };
 		F4477CB41B54ECE50062C2A5 /* FirstUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CB31B54ECE50062C2A5 /* FirstUITests.m */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
+		F492477C1B57ABBE008B26EC /* MapTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = F492477B1B57ABBE008B26EC /* MapTouchView.m */; };
 		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
 		F4AFC5E31B568CFA00A5F9C7 /* loc.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E21B568CFA00A5F9C7 /* loc.png */; };
 		F4AFC5E71B568D7C00A5F9C7 /* locic.png in Resources */ = {isa = PBXBuildFile; fileRef = F4AFC5E41B568D7C00A5F9C7 /* locic.png */; };
@@ -51,6 +53,8 @@
 /* Begin PBXFileReference section */
 		F44646CF1B577F34003A3296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F44646D11B577F52003A3296 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F44646D51B578EF8003A3296 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceAnnotation.h; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.h; sourceTree = "<group>"; };
+		F44646D61B578EF8003A3296 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceAnnotation.m; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.m; sourceTree = "<group>"; };
 		F4477C8B1B54ECE50062C2A5 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4477C8F1B54ECE50062C2A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4477C911B54ECE50062C2A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		F4477CB51B54ECE50062C2A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
+		F492477A1B57ABBE008B26EC /* MapTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTouchView.h; sourceTree = "<group>"; };
+		F492477B1B57ABBE008B26EC /* MapTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTouchView.m; sourceTree = "<group>"; };
 		F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F4AFC5E21B568CFA00A5F9C7 /* loc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loc.png; sourceTree = "<group>"; };
@@ -135,6 +141,8 @@
 		F4477C8D1B54ECE50062C2A5 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F44646D51B578EF8003A3296 /* PlaceAnnotation.h */,
+				F44646D61B578EF8003A3296 /* PlaceAnnotation.m */,
 				F4AFC5EA1B56958100A5F9C7 /* detback.png */,
 				F4AFC5E41B568D7C00A5F9C7 /* locic.png */,
 				F4AFC5E51B568D7C00A5F9C7 /* locq.png */,
@@ -157,6 +165,8 @@
 				F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */,
 				F4477C9F1B54ECE50062C2A5 /* Info.plist */,
 				F4477C8E1B54ECE50062C2A5 /* Supporting Files */,
+				F492477A1B57ABBE008B26EC /* MapTouchView.h */,
+				F492477B1B57ABBE008B26EC /* MapTouchView.m */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -330,6 +340,8 @@
 			files = (
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
 				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
+				F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */,
+				F492477C1B57ABBE008B26EC /* MapTouchView.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
