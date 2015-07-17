@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dfl-m2-7i6">
     <dependencies>
+        <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Events-->
@@ -17,13 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="19" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-xK-Edy">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="19" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-xK-Edy">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="551" id="UG8-2s-ZnC"/>
-                                    <constraint firstAttribute="width" constant="400" id="cAY-aH-Arp"/>
-                                </constraints>
                                 <edgeInsets key="layoutMargins" top="1" left="0.0" bottom="1" right="0.0"/>
                                 <color key="separatorColor" red="0.094598327020201989" green="0.020987391644675446" blue="0.0018203863053628765" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -94,17 +90,8 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="UG8-2s-ZnC"/>
-                                        <exclude reference="cAY-aH-Arp"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="UG8-2s-ZnC"/>
-                                        <include reference="cAY-aH-Arp"/>
-                                    </mask>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="487"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="YiA-Mp-ra7"/>
@@ -112,44 +99,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="cMG-a9-JYS" firstAttribute="top" secondItem="Cq4-xK-Edy" secondAttribute="bottom" id="11U-K6-vDj"/>
-                            <constraint firstItem="cMG-a9-JYS" firstAttribute="top" secondItem="Cq4-xK-Edy" secondAttribute="bottom" id="EJJ-Ah-10S"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Hej-HF-8sv"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LIs-PR-xkd"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mt0-L9-qSH"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dQ2-TS-L4Q"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="top" secondItem="K1U-We-I3R" secondAttribute="bottom" constant="-64" id="fP5-ZK-zGV"/>
-                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pEl-y3-jBz"/>
-                            <constraint firstAttribute="trailing" secondItem="Cq4-xK-Edy" secondAttribute="trailing" id="yVi-pA-RHX"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Hej-HF-8sv"/>
-                                <exclude reference="LIs-PR-xkd"/>
-                                <exclude reference="Mt0-L9-qSH"/>
-                                <exclude reference="dQ2-TS-L4Q"/>
-                                <exclude reference="fP5-ZK-zGV"/>
-                                <exclude reference="pEl-y3-jBz"/>
-                                <exclude reference="yVi-pA-RHX"/>
-                                <exclude reference="11U-K6-vDj"/>
-                                <exclude reference="EJJ-Ah-10S"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="Hej-HF-8sv"/>
-                                <include reference="LIs-PR-xkd"/>
-                                <include reference="Mt0-L9-qSH"/>
-                                <include reference="dQ2-TS-L4Q"/>
-                                <include reference="fP5-ZK-zGV"/>
-                                <include reference="pEl-y3-jBz"/>
-                                <include reference="yVi-pA-RHX"/>
-                                <include reference="11U-K6-vDj"/>
-                                <include reference="EJJ-Ah-10S"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="Vp7-il-GmL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -159,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-447" y="314"/>
+            <point key="canvasLocation" x="-340.5" y="274"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ndr-3g-hju">
