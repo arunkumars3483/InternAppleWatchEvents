@@ -8,7 +8,7 @@
         <!--Events-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K1U-We-I3R"/>
                         <viewControllerLayoutGuide type="bottom" id="cMG-a9-JYS"/>
@@ -17,9 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="19" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-xK-Edy">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="167" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Cq4-xK-Edy">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="0.94999999999999996"/>
                                 <edgeInsets key="layoutMargins" top="1" left="0.0" bottom="1" right="0.0"/>
                                 <color key="separatorColor" red="0.094598327020201989" green="0.020987391644675446" blue="0.0018203863053628765" alpha="0.79000000000000004" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -90,9 +91,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="487"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="YiA-Mp-ra7"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="s2f-3n-uL1"/>
@@ -100,6 +98,31 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K1U-We-I3R" firstAttribute="bottom" secondItem="Cq4-xK-Edy" secondAttribute="top" id="8fr-gW-Gpg"/>
+                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bc7-kA-0Qz"/>
+                            <constraint firstItem="cMG-a9-JYS" firstAttribute="top" secondItem="Cq4-xK-Edy" secondAttribute="bottom" id="LsT-Bc-6LY"/>
+                            <constraint firstAttribute="trailing" secondItem="Cq4-xK-Edy" secondAttribute="trailing" id="hh8-o5-Bvh"/>
+                            <constraint firstItem="Cq4-xK-Edy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nHZ-fy-k4I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8fr-gW-Gpg"/>
+                                <exclude reference="Bc7-kA-0Qz"/>
+                                <exclude reference="hh8-o5-Bvh"/>
+                                <exclude reference="nHZ-fy-k4I"/>
+                                <exclude reference="LsT-Bc-6LY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8fr-gW-Gpg"/>
+                                <include reference="Bc7-kA-0Qz"/>
+                                <include reference="hh8-o5-Bvh"/>
+                                <include reference="nHZ-fy-k4I"/>
+                                <include reference="LsT-Bc-6LY"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="Vp7-il-GmL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
