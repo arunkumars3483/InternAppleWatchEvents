@@ -15,6 +15,7 @@
 
 @implementation ViewController
 @synthesize tableView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -102,19 +103,47 @@
     cell.time.text=[tme objectAtIndex:indexPath.row];
     cell.venue.text=[ven objectAtIndex:indexPath.row];
     cell.date.text=[dat objectAtIndex:indexPath.row];
-    NSString *s =[rat objectAtIndex:indexPath.row];
+   
 
-    s = [s stringByAppendingString:@"/5"];
-    cell.rating.text= s;   //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    
+    
+    int x = [[rat  objectAtIndex:indexPath.row]intValue];
+    NSLog(@"%i",x);//cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
-cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back.png"] ] ;
+    switch (x) {
+        case 1:
+            cell.ratestar.image = [UIImage imageNamed:@"1s.png"];
+            break;
+        case 2:
+            cell.ratestar.image = [UIImage imageNamed:@"2s.png"];
+
+            break;
+        case 3:
+            cell.ratestar.image = [UIImage imageNamed:@"3s.png"];
+
+            break;
+        case 4:
+            cell.ratestar.image = [UIImage imageNamed:@"4s.png"];
+
+            break;
+        case 5:
+            cell.ratestar.image = [UIImage imageNamed:@"5s.png"];
+
+            break;
+            
+            
+        default:
+            cell.ratestar.image = [UIImage imageNamed:@"1s.png"];
+            break;
+    }
+cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgg.png"] ] ;
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 167;
+    return 145;
 }
 /*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

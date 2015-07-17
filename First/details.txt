@@ -18,7 +18,7 @@
      "Location":"Kottayam",
      "Time":"12:00",
      
-                    "Rating":"3",
+                    "Rating":"4",
 "Address":"Nedumkuzhy, Vellore, Pampady, Kottayam",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
                    },
@@ -29,7 +29,7 @@
      "Location":"trivandrum",
      "Time":"12:00",
      
-                    "Rating":"3",
+                    "Rating":"5",
 "Address":"Sreekariyam - Kazhakuttam Road, Thiruvananthapuram",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
                    },
@@ -40,7 +40,7 @@
      "Location":"kollam",
      "Time":"18:00",
      
-                    "Rating":"3",
+                    "Rating":"2",
 "Address":"Karicode, Peroor, Kollam",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
                    },
@@ -51,7 +51,7 @@
      "Location":"Kochi",
      "Time":"12:00",
      
-                    "Rating":"3",
+                    "Rating":"2",
 "Address":"Thrikkakara, Edappally, Kochi",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
                    },
@@ -73,7 +73,7 @@
      "Location":"kozhicode",
      "Time":"12:00",
      
-                    "Rating":"3",
+                    "Rating":"4",
 "Address":"Kannur Road, West Hill P.O., Kozhikode",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
                     },
@@ -84,7 +84,7 @@
      "Location":"Palakkad",
      "Time":"12:00",
      
-                "Rating":"3",
+                "Rating":"5",
 "Address":"Railway Colony, Akathethara, Palakkad",
 "Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
      }

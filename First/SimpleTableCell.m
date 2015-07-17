@@ -15,9 +15,9 @@
 @synthesize time = _time;
 @synthesize  venue= _venue;
 @synthesize date = _date;
-@synthesize rating = _Rating;
 @synthesize ti = _ti;
 @synthesize cl = _cal;
+@synthesize ratestar=_ratt;
 - (void)awakeFromNib {
     // Initialization code
 }

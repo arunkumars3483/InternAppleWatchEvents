@@ -55,7 +55,37 @@
     addr.text=Address;
     dat.text=Date;
     tim.text=Time;
-    rat.text=Rating;
+    int x = [Rating intValue];
+    NSLog(@"%i",x);//cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
+    switch (x) {
+        case 1:
+           rat.image = [UIImage imageNamed:@"1s.png"];
+            break;
+        case 2:
+            rat.image = [UIImage imageNamed:@"2s.png"];
+            
+            break;
+        case 3:
+            rat.image = [UIImage imageNamed:@"3s.png"];
+            
+            break;
+        case 4:
+           rat.image = [UIImage imageNamed:@"4s.png"];
+            
+            break;
+        case 5:
+            rat.image = [UIImage imageNamed:@"5s.png"];
+            
+            break;
+            
+            
+        default:
+            rat.image = [UIImage imageNamed:@"1s.png"];
+            break;
+    }
+
+    
     des.text=Description;
     self.mapView.delegate = self;
     

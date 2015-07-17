@@ -17,6 +17,6 @@
 @property (nonatomic, weak) IBOutlet UIImageView *cl;
 @property (nonatomic, weak) IBOutlet UILabel *time;
 @property (nonatomic, weak) IBOutlet UILabel *date;
-@property (nonatomic, weak) IBOutlet UILabel *rating;
 
+@property (nonatomic, strong) IBOutlet UIImageView *ratestar;
 @end

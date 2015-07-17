@@ -15,6 +15,8 @@
 }
 -(IBAction)dismisswindow;
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
+
+
 @property (nonatomic, strong) IBOutlet UIView *bc;
 @property (nonatomic, strong) NSString *recipeName;
 @property (nonatomic, strong) NSString *ID;
@@ -28,7 +30,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *addr;
 @property (nonatomic, strong) IBOutlet UILabel *dat;
 @property (nonatomic, strong) IBOutlet UILabel *tim;
-@property (nonatomic, strong) IBOutlet UILabel *rat;
+@property (nonatomic, strong) IBOutlet UIImageView *rat;
 @property (nonatomic, strong) IBOutlet UILabel *des;
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
