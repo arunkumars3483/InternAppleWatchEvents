@@ -29,6 +29,8 @@
 		F463C4081B5A0135009944BD /* First WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F463C3EC1B5A0134009944BD /* First WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F463C4111B5A1EC5009944BD /* 2nd.png in Resources */ = {isa = PBXBuildFile; fileRef = F463C4101B5A1EC5009944BD /* 2nd.png */; };
 		F463C4131B5A1FF7009944BD /* 2back.png in Resources */ = {isa = PBXBuildFile; fileRef = F463C4121B5A1FF7009944BD /* 2back.png */; };
+		F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* Events.xcdatamodeld */; };
+		F463C4251B5A7720009944BD /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = F463C4241B5A7720009944BD /* Entity.m */; };
 		F48C2AFD1B58F4D600486A09 /* bckf.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2AFC1B58F4D600486A09 /* bckf.png */; };
 		F48C2AFF1B58F62F00486A09 /* bbbk.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2AFE1B58F62F00486A09 /* bbbk.png */; };
 		F48C2B011B58F74D00486A09 /* bbb.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2B001B58F74D00486A09 /* bbb.png */; };
@@ -137,6 +139,10 @@
 		F463C4051B5A0135009944BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F463C4101B5A1EC5009944BD /* 2nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2nd.png; path = ../../../Downloads/2nd.png; sourceTree = "<group>"; };
 		F463C4121B5A1FF7009944BD /* 2back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2back.png; path = ../../../Downloads/2back.png; sourceTree = "<group>"; };
+		F463C4181B5A71A6009944BD /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
+		F463C4221B5A7720009944BD /* Entity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Entity+CoreDataProperties.h"; path = "../Entity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F463C4231B5A7720009944BD /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../Entity.h; sourceTree = "<group>"; };
+		F463C4241B5A7720009944BD /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = ../Entity.m; sourceTree = "<group>"; };
 		F48C2AFC1B58F4D600486A09 /* bckf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bckf.png; path = ../../../Downloads/bckf.png; sourceTree = "<group>"; };
 		F48C2AFE1B58F62F00486A09 /* bbbk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bbbk.png; path = ../../../Downloads/bbbk.png; sourceTree = "<group>"; };
 		F48C2B001B58F74D00486A09 /* bbb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bbb.png; path = ../../../Downloads/bbb.png; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 				F48C2B101B59248300486A09 /* bbl.png */,
 				F48C2B0E1B5908B100486A09 /* spll.png */,
 				F48C2B041B5900F100486A09 /* 1s.png */,
+				F463C4231B5A7720009944BD /* Entity.h */,
+				F463C4241B5A7720009944BD /* Entity.m */,
+				F463C4221B5A7720009944BD /* Entity+CoreDataProperties.h */,
 				F48C2B051B5900F100486A09 /* 2s.png */,
 				F48C2B061B5900F100486A09 /* 3s.png */,
 				F48C2B071B5900F100486A09 /* 4s.png */,
@@ -253,8 +262,8 @@
 				F4477C921B54ECE50062C2A5 /* AppDelegate.m */,
 				F4477C941B54ECE50062C2A5 /* ViewController.h */,
 				F4477C951B54ECE50062C2A5 /* ViewController.m */,
-				F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */,
 				F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */,
+				F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */,
 				F4477C971B54ECE50062C2A5 /* Main.storyboard */,
 				F4477C9A1B54ECE50062C2A5 /* Assets.xcassets */,
 				F4477C9C1B54ECE50062C2A5 /* LaunchScreen.storyboard */,
@@ -264,6 +273,7 @@
 				F4477C8E1B54ECE50062C2A5 /* Supporting Files */,
 				F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */,
 				F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */,
+				F463C4171B5A71A6009944BD /* Events.xcdatamodeld */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -541,11 +551,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */,
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
 				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
 				F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
+				F463C4251B5A7720009944BD /* Entity.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
 				F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */,
 			);
@@ -891,6 +903,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F463C4171B5A71A6009944BD /* Events.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F463C4181B5A71A6009944BD /* Events.xcdatamodel */,
+			);
+			currentVersion = F463C4181B5A71A6009944BD /* Events.xcdatamodel */;
+			path = Events.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F4477C831B54ECE50062C2A5 /* Project object */;
 }

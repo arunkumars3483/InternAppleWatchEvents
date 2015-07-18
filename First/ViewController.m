@@ -78,11 +78,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - IBAction Methods
+
 - (IBAction)showMessage
 {
     mytext.text=@"text changed for button pressw";
     
     }
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [tableData count];

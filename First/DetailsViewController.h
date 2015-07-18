@@ -11,7 +11,6 @@
 #import <CoreLocation/Corelocation.h>
 @interface DetailsViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
 {
-    
 }
 -(IBAction)dismisswindow;
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
