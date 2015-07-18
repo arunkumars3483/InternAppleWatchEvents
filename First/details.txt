@@ -7,7 +7,7 @@
                     "Time":"12:00",
                     "Rating":"3",
 "Address":"Jubilee Exchange House, Mama Ngina Street, Nairobi",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"RITU is the festival of illumination which represents the technological realm devoted to the technical events of RITU."
 
      
                    },
@@ -20,7 +20,7 @@
      
                     "Rating":"4",
 "Address":"Nedumkuzhy, Vellore, Pampady, Kottayam",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"MECHANOVA 2014's (India) professional profile on LinkedIn. LinkedIn is the world's largest business network"
                    },
                    {
 "Id":"1",
@@ -31,7 +31,7 @@
      
                     "Rating":"5",
 "Address":"Sreekariyam - Kazhakuttam Road, Thiruvananthapuram",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"The annual national level cultural fest of College of Engineering Trivandrum to be held on 12,13,14,15 March 2015."
                    },
                    {
 "Id":"1",
@@ -42,7 +42,7 @@
      
                     "Rating":"2",
 "Address":"Karicode, Peroor, Kollam",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"Tezoro 14 , the 3-day national level techno-managerial fest launching on 21st of February 2014, is one of a kind."
                    },
                    {
 "Id":"1",
@@ -53,7 +53,7 @@
      
                     "Rating":"2",
 "Address":"Thrikkakara, Edappally, Kochi",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"Infuze's music is like his home New York City. It's rooted in the misty streets. There is the unmistakable influence of hip-hop, his city's greatest musical legacy."
                    },
                    {
 "Id":"1",
@@ -75,7 +75,7 @@
      
                     "Rating":"4",
 "Address":"Kannur Road, West Hill P.O., Kozhikode",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"VASTHEYA 2012 is a National Level Technical Symposium conducted by Department of Civil Engineering, RIT Kottayam."
                     },
                     {
 "Id":"1",
@@ -86,7 +86,7 @@
      
                 "Rating":"5",
 "Address":"Railway Colony, Akathethara, Palakkad",
-"Description":"sfsdf sdfser fserghh dfgerter dgdgx dfgdfgswe sgfserer sfwersvxv sfsfsxf sdfsdf sdfsdfssdfg sfs "
+"Description":"The biggest fest in kolkata and second largest fest in eastern india with 40+ events. Well organised and best part is everything is fair and open."
      }
 
     ]
