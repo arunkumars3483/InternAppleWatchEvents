@@ -486,9 +486,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHK-qb-Ggx">
                                 <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="107" id="eKE-or-UHP">
-                                        <variation key="widthClass=compact" constant="68"/>
-                                    </constraint>
+                                    <constraint firstAttribute="height" constant="75" id="eKE-or-UHP"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -504,7 +502,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-ub-3U0">
                                 <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="T5w-XC-iLR"/>
+                                    <constraint firstAttribute="height" constant="75" id="T5w-XC-iLR"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -571,17 +569,18 @@
                             <constraint firstItem="lzn-9j-nha" firstAttribute="top" secondItem="c1c-xl-2CZ" secondAttribute="bottom" id="6KB-Wo-HlM"/>
                             <constraint firstItem="qIg-dA-sWP" firstAttribute="top" secondItem="H8j-Z9-I4x" secondAttribute="bottom" constant="3" id="8qa-dO-r7c"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" id="Dkc-MW-bNn"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" constant="-4" id="EHK-BH-VkX"/>
+                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" constant="-1" id="EHK-BH-VkX"/>
                             <constraint firstItem="pe2-Tg-y0Y" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.59" constant="1" id="FjK-9e-19j"/>
                             <constraint firstItem="H8j-Z9-I4x" firstAttribute="centerX" secondItem="wa6-VR-j40" secondAttribute="centerX" id="LDN-hC-QZl"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" id="MKG-3o-VDF"/>
-                            <constraint firstItem="7PU-ub-3U0" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.65" constant="1" id="Mwr-ua-EMT"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.65" constant="1" id="NIj-Se-e4R"/>
+                            <constraint firstItem="7PU-ub-3U0" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.62" constant="1" id="Mwr-ua-EMT"/>
+                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.62" constant="1" id="NIj-Se-e4R"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="top" secondItem="x7h-9h-ogR" secondAttribute="bottom" id="PLg-cN-ljc"/>
+                            <constraint firstItem="7PU-ub-3U0" firstAttribute="bottom" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="Rjl-9j-pln"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="centerX" secondItem="wa6-VR-j40" secondAttribute="centerX" id="Rlj-CX-vUV"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="bottom" secondItem="wa6-VR-j40" secondAttribute="bottom" multiplier="0.5" constant="1" id="SeS-ug-h7I"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" id="TUY-HS-C6V"/>
                             <constraint firstItem="7PU-ub-3U0" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" constant="-4" id="aXQ-Hb-XAs"/>
+                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="bottom" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="b9c-gm-mmC"/>
                             <constraint firstItem="ePQ-no-ynE" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" constant="40" id="bV0-3X-8oz"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" id="eHP-3Q-E1t"/>
                             <constraint firstItem="ePQ-no-ynE" firstAttribute="top" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="jL4-BE-vSJ"/>
@@ -589,7 +588,6 @@
                             <constraint firstItem="qIg-dA-sWP" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" constant="9" id="o6i-ZS-tZX"/>
                             <constraint firstItem="H8j-Z9-I4x" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" constant="9" id="pnw-Ow-Obc"/>
                             <constraint firstItem="pe2-Tg-y0Y" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" constant="9" id="s7Y-dX-edd"/>
-                            <constraint firstItem="7PU-ub-3U0" firstAttribute="bottom" secondItem="wa6-VR-j40" secondAttribute="bottom" multiplier="0.5" constant="1" id="tgM-U2-lrf"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="bottom" secondItem="wa6-VR-j40" secondAttribute="bottom" id="wOU-GD-bba"/>
                             <constraint firstItem="H8j-Z9-I4x" firstAttribute="centerY" secondItem="wa6-VR-j40" secondAttribute="bottom" multiplier="0.34" id="wqC-ES-6d9"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="top" secondItem="ePQ-no-ynE" secondAttribute="bottom" constant="3" id="wt0-QQ-W5o"/>
@@ -612,6 +610,7 @@
                                 <exclude reference="o6i-ZS-tZX"/>
                                 <exclude reference="2rK-r8-wvi"/>
                                 <exclude reference="FjK-9e-19j"/>
+                                <exclude reference="Rjl-9j-pln"/>
                                 <exclude reference="s7Y-dX-edd"/>
                                 <exclude reference="2hO-wm-Arn"/>
                                 <exclude reference="jih-gJ-k32"/>
@@ -623,10 +622,9 @@
                                 <exclude reference="wt0-QQ-W5o"/>
                                 <exclude reference="Mwr-ua-EMT"/>
                                 <exclude reference="aXQ-Hb-XAs"/>
-                                <exclude reference="tgM-U2-lrf"/>
                                 <exclude reference="EHK-BH-VkX"/>
                                 <exclude reference="NIj-Se-e4R"/>
-                                <exclude reference="SeS-ug-h7I"/>
+                                <exclude reference="b9c-gm-mmC"/>
                                 <exclude reference="6KB-Wo-HlM"/>
                             </mask>
                         </variation>
@@ -648,6 +646,7 @@
                                 <include reference="o6i-ZS-tZX"/>
                                 <include reference="2rK-r8-wvi"/>
                                 <include reference="FjK-9e-19j"/>
+                                <include reference="Rjl-9j-pln"/>
                                 <include reference="s7Y-dX-edd"/>
                                 <include reference="2hO-wm-Arn"/>
                                 <include reference="jih-gJ-k32"/>
@@ -659,10 +658,9 @@
                                 <include reference="wt0-QQ-W5o"/>
                                 <include reference="Mwr-ua-EMT"/>
                                 <include reference="aXQ-Hb-XAs"/>
-                                <include reference="tgM-U2-lrf"/>
                                 <include reference="EHK-BH-VkX"/>
                                 <include reference="NIj-Se-e4R"/>
-                                <include reference="SeS-ug-h7I"/>
+                                <include reference="b9c-gm-mmC"/>
                                 <include reference="6KB-Wo-HlM"/>
                             </mask>
                         </variation>
@@ -735,38 +733,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3md-py-xQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1128" y="177"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ihA-8B-y4D">
-            <objects>
-                <viewController id="b5A-uA-8f2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AtF-ws-jGb"/>
-                        <viewControllerLayoutGuide type="bottom" id="nWh-1M-sWj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sHU-yf-kUZ">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TSh-Ut-rZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="QsA-Jv-9Im">
-            <objects>
-                <viewController id="cWa-cA-Wel" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="87j-lX-xEY"/>
-                        <viewControllerLayoutGuide type="bottom" id="36C-NI-kfU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5sO-JK-Lqs">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R8q-Jx-Sea" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
