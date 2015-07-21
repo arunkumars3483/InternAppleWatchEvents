@@ -9,17 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @interface Event : NSObject
-{
-@public
-    NSString *address;
-    NSString *date;
-    NSString *desc;
-    NSString *ID;
-    NSString *location;
-    NSString *name;
-    NSString *rating;
-    NSString *time;
+
+  @property(nonatomic)  NSString *address;
+ @property(nonatomic)   NSString *date;
+ @property(nonatomic)   NSString *desc;
+ @property(nonatomic)   NSString *ID;
+ @property(nonatomic)   NSString *location;
+  @property(nonatomic)  NSString *name;
+  @property(nonatomic)  NSString *rating;
+   @property(nonatomic) NSString *time;
 
 
-}
+
 @end

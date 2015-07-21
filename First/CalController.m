@@ -30,11 +30,12 @@
 
 #pragma mark - IBAction Methods
 
-- (IBAction)disp
+- (IBAction)sum
 {
     
    tt= (UITextField*)[self.view viewWithTag:1];
     l2= (UITextField*)[self.view viewWithTag:2];
+    ll=(UILabel*)[self.view viewWithTag:3];
     NSString *n1=tt.text;
     NSString *n2=l2.text;
     int sum=[n1 intValue]+[n2 intValue];
@@ -42,6 +43,42 @@
    ll.text= [NSString stringWithFormat:@"%d",sum];
 }
 
+- (IBAction)subtract
+{
+    
+    tt= (UITextField*)[self.view viewWithTag:4];
+    l2= (UITextField*)[self.view viewWithTag:5];
+    ll=(UILabel*)[self.view viewWithTag:6];
+    NSString *n1=tt.text;
+    NSString *n2=l2.text;
+    int re=[n1 intValue]-[n2 intValue];
+    
+    ll.text= [NSString stringWithFormat:@"%d",re];
+}
+- (IBAction)multiply
+{
+    
+    tt= (UITextField*)[self.view viewWithTag:7];
+    l2= (UITextField*)[self.view viewWithTag:8];
+    ll=(UILabel*)[self.view viewWithTag:9];
+    NSString *n1=tt.text;
+    NSString *n2=l2.text;
+    int pro=[n1 intValue]*[n2 intValue];
+    
+    ll.text= [NSString stringWithFormat:@"%d",pro];
+}
+- (IBAction)divide
+{
+    
+    tt= (UITextField*)[self.view viewWithTag:10];
+    l2= (UITextField*)[self.view viewWithTag:11];
+    ll=(UILabel*)[self.view viewWithTag:12];
+    NSString *n1=tt.text;
+    NSString *n2=l2.text;
+    float q=[n1 floatValue]/[n2 floatValue];
+    
+    ll.text= [NSString stringWithFormat:@"%f",q];
+}
 /*
 #pragma mark - Navigation
 

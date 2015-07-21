@@ -11,9 +11,12 @@
 @interface CalController : UIViewController
 
 
--(IBAction)disp;
-
+-(IBAction)sum;
+-(IBAction)subtract;
+-(IBAction)multiply;
+-(IBAction)divide;
 @property (nonatomic, weak)  UITextField *tt;
-@property (nonatomic, weak) IBOutlet UILabel *ll;
+@property (nonatomic, weak) UILabel *ll;
 @property (nonatomic, weak)  UITextField *l2;
+
 @end

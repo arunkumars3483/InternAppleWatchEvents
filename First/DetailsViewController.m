@@ -42,45 +42,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    recipeLabel.text = self.deta->name;
-    loc.text=self.deta->location;
-    addr.text=self.deta->address;
-    dat.text=self.deta->date;
-    tim.text=self.deta->time;
-    int x = [self.deta->rating intValue];
+    recipeLabel.text = self.deta.name;
+    loc.text=self.deta.location;
+    addr.text=self.deta.address;
+    dat.text=self.deta.date;
+    tim.text=self.deta.time;
+    int x = [self.deta.rating intValue];
     
-    NSLog(@"%@",self.deta->ID);
+    NSLog(@"%@",self.deta.ID);
     //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     switch (x) {
         case 1:
-           rat.image = [UIImage imageNamed:@"1s.png"];
+           rat.image = [UIImage imageNamed:@"1star"];
             break;
         case 2:
-            rat.image = [UIImage imageNamed:@"2s.png"];
+            rat.image = [UIImage imageNamed:@"2star"];
             
             break;
         case 3:
-            rat.image = [UIImage imageNamed:@"3s.png"];
+            rat.image = [UIImage imageNamed:@"3star"];
             
             break;
         case 4:
-           rat.image = [UIImage imageNamed:@"4s.png"];
+           rat.image = [UIImage imageNamed:@"4star"];
             
             break;
         case 5:
-            rat.image = [UIImage imageNamed:@"5s.png"];
+            rat.image = [UIImage imageNamed:@"5star"];
             
             break;
             
             
         default:
-            rat.image = [UIImage imageNamed:@"1s.png"];
+            rat.image = [UIImage imageNamed:@"1star"];
             break;
     }
 
     
-    des.text=self.deta->desc;
+    des.text=self.deta.desc;
     self.mapView.delegate = self;
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"detback.png"]];
@@ -109,7 +109,7 @@
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     
-    request.naturalLanguageQuery = self.deta->location;  //location String Queries
+    request.naturalLanguageQuery = self.deta.location;  //location String Queries
     request.region = newRegion;
     
     MKLocalSearchCompletionHandler completionHandler = ^(MKLocalSearchResponse *response, NSError *error)
