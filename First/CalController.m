@@ -37,7 +37,7 @@
     l2= (UITextField*)[self.view viewWithTag:2];
     NSString *n1=tt.text;
     NSString *n2=l2.text;
-    int sum=[n1 intValue]*[n2 intValue];
+    int sum=[n1 intValue]+[n2 intValue];
     
    ll.text= [NSString stringWithFormat:@"%d",sum];
 }
