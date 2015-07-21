@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42C096B1B5E032600CECFB8 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F42C096A1B5E032600CECFB8 /* Event.m */; };
+		F42C096E1B5E143500CECFB8 /* CalController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42C096D1B5E143500CECFB8 /* CalController.m */; };
 		F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646CF1B577F34003A3296 /* CoreLocation.framework */; };
 		F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
 		F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F44646D61B578EF8003A3296 /* PlaceAnnotation.m */; };
@@ -30,7 +32,6 @@
 		F463C4111B5A1EC5009944BD /* 2nd.png in Resources */ = {isa = PBXBuildFile; fileRef = F463C4101B5A1EC5009944BD /* 2nd.png */; };
 		F463C4131B5A1FF7009944BD /* 2back.png in Resources */ = {isa = PBXBuildFile; fileRef = F463C4121B5A1FF7009944BD /* 2back.png */; };
 		F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* Events.xcdatamodeld */; };
-		F463C4251B5A7720009944BD /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = F463C4241B5A7720009944BD /* Entity.m */; };
 		F48C2AFD1B58F4D600486A09 /* bckf.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2AFC1B58F4D600486A09 /* bckf.png */; };
 		F48C2AFF1B58F62F00486A09 /* bbbk.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2AFE1B58F62F00486A09 /* bbbk.png */; };
 		F48C2B011B58F74D00486A09 /* bbb.png in Resources */ = {isa = PBXBuildFile; fileRef = F48C2B001B58F74D00486A09 /* bbb.png */; };
@@ -101,6 +102,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F42C09691B5E032600CECFB8 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		F42C096A1B5E032600CECFB8 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		F42C096C1B5E143500CECFB8 /* CalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalController.h; sourceTree = "<group>"; };
+		F42C096D1B5E143500CECFB8 /* CalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalController.m; sourceTree = "<group>"; };
 		F44646CF1B577F34003A3296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F44646D11B577F52003A3296 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F44646D51B578EF8003A3296 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceAnnotation.h; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.h; sourceTree = "<group>"; };
@@ -139,10 +144,7 @@
 		F463C4051B5A0135009944BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F463C4101B5A1EC5009944BD /* 2nd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2nd.png; path = ../../../Downloads/2nd.png; sourceTree = "<group>"; };
 		F463C4121B5A1FF7009944BD /* 2back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2back.png; path = ../../../Downloads/2back.png; sourceTree = "<group>"; };
-		F463C4181B5A71A6009944BD /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
-		F463C4221B5A7720009944BD /* Entity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Entity+CoreDataProperties.h"; path = "../Entity+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F463C4231B5A7720009944BD /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = ../Entity.h; sourceTree = "<group>"; };
-		F463C4241B5A7720009944BD /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = ../Entity.m; sourceTree = "<group>"; };
+		F463C4181B5A71A6009944BD /* Events.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
 		F48C2AFC1B58F4D600486A09 /* bckf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bckf.png; path = ../../../Downloads/bckf.png; sourceTree = "<group>"; };
 		F48C2AFE1B58F62F00486A09 /* bbbk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bbbk.png; path = ../../../Downloads/bbbk.png; sourceTree = "<group>"; };
 		F48C2B001B58F74D00486A09 /* bbb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bbb.png; path = ../../../Downloads/bbb.png; sourceTree = "<group>"; };
@@ -236,9 +238,6 @@
 				F48C2B101B59248300486A09 /* bbl.png */,
 				F48C2B0E1B5908B100486A09 /* spll.png */,
 				F48C2B041B5900F100486A09 /* 1s.png */,
-				F463C4231B5A7720009944BD /* Entity.h */,
-				F463C4241B5A7720009944BD /* Entity.m */,
-				F463C4221B5A7720009944BD /* Entity+CoreDataProperties.h */,
 				F48C2B051B5900F100486A09 /* 2s.png */,
 				F48C2B061B5900F100486A09 /* 3s.png */,
 				F48C2B071B5900F100486A09 /* 4s.png */,
@@ -274,6 +273,10 @@
 				F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */,
 				F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */,
 				F463C4171B5A71A6009944BD /* Events.xcdatamodeld */,
+				F42C09691B5E032600CECFB8 /* Event.h */,
+				F42C096A1B5E032600CECFB8 /* Event.m */,
+				F42C096C1B5E143500CECFB8 /* CalController.h */,
+				F42C096D1B5E143500CECFB8 /* CalController.m */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -553,12 +556,13 @@
 			files = (
 				F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */,
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
+				F42C096B1B5E032600CECFB8 /* Event.m in Sources */,
 				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
 				F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
-				F463C4251B5A7720009944BD /* Entity.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
+				F42C096E1B5E143500CECFB8 /* CalController.m in Sources */,
 				F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -893,6 +897,7 @@
 				F463C40C1B5A0135009944BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F463C40E1B5A0135009944BD /* Build configuration list for PBXNativeTarget "First WatchKit 1 Extension" */ = {
 			isa = XCConfigurationList;
@@ -901,6 +906,7 @@
 				F463C40A1B5A0135009944BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
