@@ -27,14 +27,6 @@
 
 @synthesize places;
 @synthesize recipeLabel;
-@synthesize recipeName;
-@synthesize ID;
-@synthesize Description;
-@synthesize Time;
-@synthesize Date;
-@synthesize Location;
-@synthesize Address;
-@synthesize Rating;
 @synthesize bc;
 @synthesize mapView;
 @synthesize boundingRegion;
@@ -50,13 +42,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    recipeLabel.text = recipeName;
-    loc.text=Location;
-    addr.text=Address;
-    dat.text=Date;
-    tim.text=Time;
-    int x = [Rating intValue];
-    NSLog(@"%i",x);//cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    recipeLabel.text = self.deta->name;
+    loc.text=self.deta->location;
+    addr.text=self.deta->address;
+    dat.text=self.deta->date;
+    tim.text=self.deta->time;
+    int x = [self.deta->rating intValue];
+    
+    NSLog(@"%@",self.deta->ID);
+    //cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     switch (x) {
         case 1:
@@ -86,7 +80,7 @@
     }
 
     
-    des.text=Description;
+    des.text=self.deta->desc;
     self.mapView.delegate = self;
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"detback.png"]];
@@ -115,7 +109,7 @@
     
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
     
-    request.naturalLanguageQuery = Location;  //location String Queries
+    request.naturalLanguageQuery = self.deta->location;  //location String Queries
     request.region = newRegion;
     
     MKLocalSearchCompletionHandler completionHandler = ^(MKLocalSearchResponse *response, NSError *error)
@@ -166,6 +160,8 @@
     
 }
 
+#pragma mark - IBAction Methods
+
 - (IBAction)dismisswindow
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -184,6 +180,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - Navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Fullscreen"]) {
         

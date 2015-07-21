@@ -7,25 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Event.h"
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UILabel *mytext;
-    NSMutableArray *tableData;
-    NSMutableArray *tme;
-    NSMutableArray *dat;
-    NSMutableArray *ven;
-NSMutableArray *rat;
-NSMutableArray *description;
-    NSMutableArray *EventId;
-    NSMutableArray *Address;
-     NSArray *thumbnails;
-    NSArray *prepTime;
+   
+    Event *details;
+    NSMutableArray *events;
+   
 
 }
     -(IBAction)showMessage;
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 
 @end
