@@ -169,6 +169,18 @@
    
 }
 
+- (IBAction)noti
+{
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    localNotification.alertBody = @"new Blog Posted at iOScreator.com";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    
+    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    localNotification.category = @"com.firstios.arun.First.watchkitapp";
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
 
 
 /*
