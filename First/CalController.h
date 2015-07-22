@@ -9,14 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface CalController : UIViewController
+{
+
+    NSString *stack;
+    double result;
+    int optype;
+
+}
 
 
--(IBAction)sum;
--(IBAction)subtract;
--(IBAction)multiply;
--(IBAction)divide;
-@property (nonatomic, weak)  UITextField *tt;
-@property (nonatomic, weak) UILabel *ll;
-@property (nonatomic, weak)  UITextField *l2;
+@property (nonatomic, weak) IBOutlet UILabel *console;
+@property (weak, nonatomic) IBOutlet UILabel *opperator;
 
 @end

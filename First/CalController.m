@@ -15,12 +15,13 @@
 @implementation CalController
 
 
-@synthesize  tt;
-@synthesize  ll;
-@synthesize l2;
+
+@synthesize  console, opperator;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    stack = @"";
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,55 +31,134 @@
 
 #pragma mark - IBAction Methods
 
-- (IBAction)sum
-{
-    
-   tt= (UITextField*)[self.view viewWithTag:1];
-    l2= (UITextField*)[self.view viewWithTag:2];
-    ll=(UILabel*)[self.view viewWithTag:3];
-    NSString *n1=tt.text;
-    NSString *n2=l2.text;
-    int sum=[n1 intValue]+[n2 intValue];
-    
-   ll.text= [NSString stringWithFormat:@"%d",sum];
+- (IBAction)one:(id)sender {
+    [self addnumber:1];
+}
+- (IBAction)two:(id)sender {
+    [self addnumber:2];
+}
+- (IBAction)three:(id)sender {
+    [self addnumber:3];
+}
+- (IBAction)four:(id)sender {
+    [self addnumber:4];
+}
+- (IBAction)five:(id)sender {
+    [self addnumber:5];
+}
+- (IBAction)six:(id)sender {
+    [self addnumber:6];
+}
+- (IBAction)seven:(id)sender {
+    [self addnumber:7];
+}
+- (IBAction)eight:(id)sender {
+    [self addnumber:8];
+}
+- (IBAction)nine:(id)sender {
+    [self addnumber:9];
+}
+- (IBAction)zero:(id)sender {
+    [self addnumber:0];
+}
+- (IBAction)remove:(id)sender {
+    [self addnumber:-1];
 }
 
-- (IBAction)subtract
-{
-    
-    tt= (UITextField*)[self.view viewWithTag:4];
-    l2= (UITextField*)[self.view viewWithTag:5];
-    ll=(UILabel*)[self.view viewWithTag:6];
-    NSString *n1=tt.text;
-    NSString *n2=l2.text;
-    int re=[n1 intValue]-[n2 intValue];
-    
-    ll.text= [NSString stringWithFormat:@"%d",re];
+- (IBAction)dot:(id)sender {
+    [self addpoint];
 }
-- (IBAction)multiply
-{
-    
-    tt= (UITextField*)[self.view viewWithTag:7];
-    l2= (UITextField*)[self.view viewWithTag:8];
-    ll=(UILabel*)[self.view viewWithTag:9];
-    NSString *n1=tt.text;
-    NSString *n2=l2.text;
-    int pro=[n1 intValue]*[n2 intValue];
-    
-    ll.text= [NSString stringWithFormat:@"%d",pro];
+
+- (IBAction)equals:(id)sender {
+    [self logic:0];
 }
-- (IBAction)divide
-{
-    
-    tt= (UITextField*)[self.view viewWithTag:10];
-    l2= (UITextField*)[self.view viewWithTag:11];
-    ll=(UILabel*)[self.view viewWithTag:12];
-    NSString *n1=tt.text;
-    NSString *n2=l2.text;
-    float q=[n1 floatValue]/[n2 floatValue];
-    
-    ll.text= [NSString stringWithFormat:@"%f",q];
+- (IBAction)addition:(id)sender {
+    [self logic:1];
 }
+- (IBAction)subtraction:(id)sender {
+    [self logic:2];
+}
+- (IBAction)multiply:(id)sender {
+    [self logic:3];
+}
+- (IBAction)division:(id)sender {
+    [self logic:4];
+    
+}
+- (IBAction)cancel:(id)sender {
+    stack = @"0";
+    result = 0.0;
+    optype = -1;
+    [console setText:stack];
+    stack = @"";
+
+    [opperator setText:@""];
+}
+
+-(void)addpoint{
+    stack = [NSString stringWithFormat:@"%1$@.", stack];
+    [console setText:stack];
+}
+
+-(void)logic:(int)type{
+    if(type == 0){ // Equals
+        if(optype == 1){
+            stack = [NSString stringWithFormat:@"%f", [stack doubleValue]+result];
+        }else if(optype == 2){
+            stack = [NSString stringWithFormat:@"%f", result-[stack doubleValue]];
+            
+        }else if(optype == 3){
+            stack = [NSString stringWithFormat:@"%f", [stack doubleValue]*result];
+            
+        }else if(optype == 4){
+            stack = [NSString stringWithFormat:@"%f", result/[stack doubleValue]];
+            
+        }
+        [console setText:stack];
+        [opperator setText:@"="];
+    }else{
+        if(type == 1){ // addition
+            [opperator setText:@"+"];
+            
+        }else if(type == 2){ // subtraction
+            [opperator setText:@"-"];
+        }else if(type == 3){ // multiply
+            [opperator setText:@"*"];
+        }else if(type == 4){ // division
+            [opperator setText:@"/"];
+        }
+        optype = type;
+        result = [stack doubleValue];
+        stack = @"0";
+        [console setText:stack];
+        stack = @"";
+
+        
+    }
+}
+
+-(void)addnumber:(int)number{
+    
+    if(stack == NULL){
+        stack = @"";
+    }
+    
+    if(number > -1){
+        stack = [NSString stringWithFormat:@"%1$@%2$d", stack, number];
+    }else if([stack length] > 0){
+        stack = [stack substringToIndex:[stack length]+number];
+    }
+    
+    if([stack length] <= 0){
+        stack = @"";
+    }
+    
+    [console setText:stack];
+    
+}
+
+
+
 /*
 #pragma mark - Navigation
 

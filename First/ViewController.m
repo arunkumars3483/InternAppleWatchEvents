@@ -142,7 +142,7 @@ cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"c
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 145;
+    return 120;
 }
 
 

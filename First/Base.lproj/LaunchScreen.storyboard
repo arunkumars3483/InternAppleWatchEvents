@@ -37,12 +37,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstAttribute="bottom" secondItem="RmH-mA-V4c" secondAttribute="bottom" id="HwN-vO-Bdn"/>
+                            <constraint firstItem="RmH-mA-V4c" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="HwN-vO-Bdn"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="top" secondItem="RmH-mA-V4c" secondAttribute="bottom" constant="-30" id="Oz1-5e-Pyn"/>
                             <constraint firstItem="RmH-mA-V4c" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="PyC-iP-Blz"/>
                             <constraint firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
-                            <constraint firstAttribute="trailing" secondItem="RmH-mA-V4c" secondAttribute="trailing" id="WtC-Uj-Lke"/>
+                            <constraint firstItem="RmH-mA-V4c" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="WtC-Uj-Lke"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="0.75" constant="1" id="moa-c2-u7t"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
                             <constraint firstItem="RmH-mA-V4c" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xX5-OW-HSD"/>
