@@ -24,13 +24,10 @@
 		F4477CB41B54ECE50062C2A5 /* FirstUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CB31B54ECE50062C2A5 /* FirstUITests.m */; };
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
 		F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */; };
-		F463C3F21B5A0134009944BD /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F463C3F11B5A0134009944BD /* InterfaceController.m */; };
-		F463C3F51B5A0134009944BD /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F463C3F41B5A0134009944BD /* NotificationController.m */; };
-		F463C3F71B5A0134009944BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F463C3F61B5A0134009944BD /* Assets.xcassets */; };
+		F45B503D1B5FBB8A0025DA04 /* First WatchKit 1 App in Resources */ = {isa = PBXBuildFile; fileRef = F45B503B1B5FBB8A0025DA04 /* First WatchKit 1 App */; };
+		F45B503E1B5FBB8B0025DA04 /* First WatchKit 1 Extension in Resources */ = {isa = PBXBuildFile; fileRef = F45B503C1B5FBB8A0025DA04 /* First WatchKit 1 Extension */; };
+		F45B50401B5FBBA70025DA04 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B503F1B5FBBA70025DA04 /* WatchKit.framework */; };
 		F463C3FC1B5A0135009944BD /* First WatchKit 1 App.app in Resources */ = {isa = PBXBuildFile; fileRef = F463C3FB1B5A0135009944BD /* First WatchKit 1 App.app */; };
-		F463C4021B5A0135009944BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463C4001B5A0135009944BD /* Interface.storyboard */; };
-		F463C4041B5A0135009944BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F463C4031B5A0135009944BD /* Assets.xcassets */; };
-		F463C4081B5A0135009944BD /* First WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F463C3EC1B5A0134009944BD /* First WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* Events.xcdatamodeld */; };
 		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
 		F4D657DC1B563D57004D7D24 /* details.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4D657DB1B562D8A004D7D24 /* details.txt */; };
@@ -58,28 +55,7 @@
 			remoteGlobalIDString = F463C3FA1B5A0135009944BD;
 			remoteInfo = "First WatchKit 1 App";
 		};
-		F463C4061B5A0135009944BD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4477C831B54ECE50062C2A5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F463C3EB1B5A0134009944BD;
-			remoteInfo = "First WatchKit 1 Extension";
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F463C40F1B5A0135009944BD /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				F463C4081B5A0135009944BD /* First WatchKit 1 Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F42C09691B5E032600CECFB8 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
@@ -111,18 +87,11 @@
 		F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
 		F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScreenControllerViewController.h; sourceTree = "<group>"; };
 		F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapScreenControllerViewController.m; sourceTree = "<group>"; };
+		F45B503B1B5FBB8A0025DA04 /* First WatchKit 1 App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "First WatchKit 1 App"; sourceTree = "<group>"; };
+		F45B503C1B5FBB8A0025DA04 /* First WatchKit 1 Extension */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "First WatchKit 1 Extension"; sourceTree = "<group>"; };
+		F45B503F1B5FBBA70025DA04 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		F463C3EC1B5A0134009944BD /* First WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "First WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F463C3EF1B5A0134009944BD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		F463C3F01B5A0134009944BD /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		F463C3F11B5A0134009944BD /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		F463C3F31B5A0134009944BD /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		F463C3F41B5A0134009944BD /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
-		F463C3F61B5A0134009944BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F463C3F81B5A0134009944BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F463C3FB1B5A0135009944BD /* First WatchKit 1 App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First WatchKit 1 App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F463C4011B5A0135009944BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		F463C4031B5A0135009944BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F463C4051B5A0135009944BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F463C4181B5A71A6009944BD /* Events.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
 		F4AFC5DF1B56816600A5F9C7 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
@@ -134,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45B50401B5FBBA70025DA04 /* WatchKit.framework in Frameworks */,
 				F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */,
 				F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */,
 			);
@@ -166,13 +136,14 @@
 		F4477C821B54ECE50062C2A5 = {
 			isa = PBXGroup;
 			children = (
+				F45B503F1B5FBBA70025DA04 /* WatchKit.framework */,
+				F45B503B1B5FBB8A0025DA04 /* First WatchKit 1 App */,
+				F45B503C1B5FBB8A0025DA04 /* First WatchKit 1 Extension */,
 				F44646D11B577F52003A3296 /* MapKit.framework */,
 				F44646CF1B577F34003A3296 /* CoreLocation.framework */,
 				F4477C8D1B54ECE50062C2A5 /* First */,
 				F4477CA71B54ECE50062C2A5 /* FirstTests */,
 				F4477CB21B54ECE50062C2A5 /* FirstUITests */,
-				F463C3ED1B5A0134009944BD /* First WatchKit 1 Extension */,
-				F463C3FF1B5A0135009944BD /* First WatchKit 1 App */,
 				F4477C8C1B54ECE50062C2A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,38 +217,6 @@
 			path = FirstUITests;
 			sourceTree = "<group>";
 		};
-		F463C3ED1B5A0134009944BD /* First WatchKit 1 Extension */ = {
-			isa = PBXGroup;
-			children = (
-				F463C3F01B5A0134009944BD /* InterfaceController.h */,
-				F463C3F11B5A0134009944BD /* InterfaceController.m */,
-				F463C3F31B5A0134009944BD /* NotificationController.h */,
-				F463C3F41B5A0134009944BD /* NotificationController.m */,
-				F463C3F61B5A0134009944BD /* Assets.xcassets */,
-				F463C3F81B5A0134009944BD /* Info.plist */,
-				F463C3EE1B5A0134009944BD /* Supporting Files */,
-			);
-			path = "First WatchKit 1 Extension";
-			sourceTree = "<group>";
-		};
-		F463C3EE1B5A0134009944BD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F463C3EF1B5A0134009944BD /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F463C3FF1B5A0135009944BD /* First WatchKit 1 App */ = {
-			isa = PBXGroup;
-			children = (
-				F463C4001B5A0135009944BD /* Interface.storyboard */,
-				F463C4031B5A0135009944BD /* Assets.xcassets */,
-				F463C4051B5A0135009944BD /* Info.plist */,
-			);
-			path = "First WatchKit 1 App";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,12 +227,10 @@
 				F4477C871B54ECE50062C2A5 /* Sources */,
 				F4477C881B54ECE50062C2A5 /* Frameworks */,
 				F4477C891B54ECE50062C2A5 /* Resources */,
-				F463C40F1B5A0135009944BD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F463C4071B5A0135009944BD /* PBXTargetDependency */,
 			);
 			name = First;
 			productName = First;
@@ -424,6 +361,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45B503D1B5FBB8A0025DA04 /* First WatchKit 1 App in Resources */,
+				F45B503E1B5FBB8B0025DA04 /* First WatchKit 1 Extension in Resources */,
 				F42C09A21B5E55E200CECFB8 /* main.m in Resources */,
 				F42C09A11B5E55CE00CECFB8 /* images in Resources */,
 				F4D657DC1B563D57004D7D24 /* details.txt in Resources */,
@@ -452,7 +391,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F463C3FC1B5A0135009944BD /* First WatchKit 1 App.app in Resources */,
-				F463C3F71B5A0134009944BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,8 +398,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F463C4041B5A0135009944BD /* Assets.xcassets in Resources */,
-				F463C4021B5A0135009944BD /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,8 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F463C3F51B5A0134009944BD /* NotificationController.m in Sources */,
-				F463C3F21B5A0134009944BD /* InterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,11 +462,6 @@
 			target = F463C3FA1B5A0135009944BD /* First WatchKit 1 App */;
 			targetProxy = F463C3FD1B5A0135009944BD /* PBXContainerItemProxy */;
 		};
-		F463C4071B5A0135009944BD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F463C3EB1B5A0134009944BD /* First WatchKit 1 Extension */;
-			targetProxy = F463C4061B5A0135009944BD /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -550,14 +479,6 @@
 				F4477C9D1B54ECE50062C2A5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F463C4001B5A0135009944BD /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F463C4011B5A0135009944BD /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
