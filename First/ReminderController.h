@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ReminderController : UIViewController
-{
-    int k;
 
-}
 @property(nonatomic,weak) IBOutlet UILabel *time;
 @property(nonatomic,weak) IBOutlet UIStepper *ti;
 @property(nonatomic,weak) IBOutlet UIStepper *ho;

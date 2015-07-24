@@ -33,6 +33,11 @@
     }
     */
     // Override point for customization after application launch.
+    
+    
+        
+    
+    
     return YES;
 }
 
@@ -70,8 +75,7 @@
     NSString *body=[det objectForKey:@"body"];
     
     
-    UIAlertView *helloWorldAlert = [[UIAlertView alloc]
-                                    initWithTitle:title message:body delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *helloWorldAlert = [[UIAlertView alloc] initWithTitle:title message:body delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     // Display the Hello World Message
     [helloWorldAlert show];

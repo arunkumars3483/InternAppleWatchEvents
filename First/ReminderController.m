@@ -9,7 +9,9 @@
 #import "ReminderController.h"
 
 @interface ReminderController ()
-
+{
+int k;
+}
 @end
 
 @implementation ReminderController
