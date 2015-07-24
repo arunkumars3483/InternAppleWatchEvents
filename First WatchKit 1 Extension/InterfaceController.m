@@ -18,8 +18,7 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
-    // Configure interface objects here.
+        // Configure interface objects here.
 }
 
 - (void)willActivate {

@@ -10,5 +10,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NotificationController : WKUserNotificationInterfaceController
-
+@property(nonatomic,weak) IBOutlet WKInterfaceLabel *fgg;
 @end

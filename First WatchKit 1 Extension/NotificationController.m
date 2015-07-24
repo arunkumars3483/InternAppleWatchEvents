@@ -36,27 +36,43 @@
     [super didDeactivate];
 }
 
-/*
+#pragma mark - Notification
+
+
 - (void)didReceiveLocalNotification:(UILocalNotification *)localNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
     // This method is called when a local notification needs to be presented.
     // Implement it if you use a dynamic notification interface.
     // Populate your dynamic notification interface as quickly as possible.
     //
-    // After populating your dynamic notification interface call the completion block.
-    completionHandler(WKUserNotificationInterfaceTypeCustom);
-}
-*/
+    self.fgg.text=@"dfgdfg";
+//self.notifi
+        NSLog(@"conet : %@",localNotification);
 
-/*
+    // After populating your dynamic notification interface call the completion block.
+        completionHandler(WKUserNotificationInterfaceTypeCustom);
+}
+
+
+
 - (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
     // This method is called when a remote notification needs to be presented.
     // Implement it if you use a dynamic notification interface.
     // Populate your dynamic notification interface as quickly as possible.
     //
     // After populating your dynamic notification interface call the completion block.
+       //self.fgg.text=snt;
+    //Send count to parent application
+    NSLog(@"Inside Remote notification : %@",remoteNotification);
+    NSString *counterString = [NSString stringWithFormat:@"%d", 23];
+    NSDictionary *applicationData = [[NSDictionary alloc] initWithObjects:@[counterString] forKeys:@[@"counterValue"]];
+    
+    //Handle reciever in app delegate of parent app
+    [WKInterfaceController openParentApplication:applicationData reply:^(NSDictionary *replyInfo, NSError *error) {
+        NSLog(@"%@ %@",replyInfo, error);
+    }];
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
-*/
+
 
 @end
 

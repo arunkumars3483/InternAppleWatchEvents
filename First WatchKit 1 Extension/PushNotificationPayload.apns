@@ -1,7 +1,7 @@
 {
     "aps": {
         "alert": {
-            "body": "Test message",
+            "body": "FGood message",
             "title": "Optional title"
         },
         "category": "myCategory"

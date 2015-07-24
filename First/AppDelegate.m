@@ -13,17 +13,19 @@
 @end
 
 @implementation AppDelegate
-
+@synthesize dd;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    dd=[[NSString alloc ]init];
     UIUserNotificationType types = UIUserNotificationTypeBadge |
     UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
-    
+    //  UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     UIUserNotificationSettings *mySettings =
     [UIUserNotificationSettings settingsForTypes:types categories:nil];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
     /*
     UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (localNotification) {
@@ -55,10 +57,41 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-/*
+
+#pragma mark - Notification
+
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    application.applicationIconBadgeNumber = 0;
+   // application.applicationIconBadgeNumber = 0;
+   // NSLog(@"sdf : %@",notification);
+    
+    NSDictionary *det=notification.userInfo;
+    NSString *title=[det objectForKey:@"title"];
+    NSString *body=[det objectForKey:@"body"];
+    
+    
+    UIAlertView *helloWorldAlert = [[UIAlertView alloc]
+                                    initWithTitle:title message:body delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display the Hello World Message
+    [helloWorldAlert show];
+    
 }
-*/
+
+#pragma mark - watch kit request handling
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
+    
+    NSString *counterValue = [userInfo objectForKey:@"counterValue"];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    reply(@{@"insert counter value":counterValue,@"Event":@"ritu",@"id":appDelegate.dd});
+
+    
+        
+}
+
+
+
+
 @end
