@@ -95,6 +95,9 @@
     [opperator setText:@""];
 }
 
+#pragma mark - operations
+
+
 -(void)addpoint{
     stack = [NSString stringWithFormat:@"%1$@.", stack];
     [console setText:stack];

@@ -8,6 +8,7 @@
 
 #import "DetailsViewController.h"
 #import "PlaceAnnotation.h"
+#import "AppDelegate.h"
 #import "MapScreenControllerViewController.h"
 @interface DetailsViewController ()
 @property (nonatomic, strong) PlaceAnnotation *annotation;
@@ -171,15 +172,24 @@
 
 - (IBAction)noti
 {
-    
+ /*
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
-    localNotification.alertBody = @"new Blog Posted at iOScreator.com";
+    localNotification.alertBody = @"Notification Ready";
+    localNotification.alertTitle=@"good";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     
-    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-    localNotification.category = @"com.firstios.arun.First.watchkitapp";
+    localNotification.applicationIconBadgeNumber = 1;//[[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    localNotification.category = @"myCategory";
+    localNotification.userInfo=@{@"key1" : @"Myevent", @"key2" : @"value2", @"key3" : @"value3"};
+    
+    NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName: @"com.firstios.First"];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+     appDelegate.dd=self.deta.ID;
+    // Use the shared user defaults object to update the user's account
+    [mySharedDefaults setObject:@"dfg" forKey:@"lastAccountName"];
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+   */
 }
 
 
