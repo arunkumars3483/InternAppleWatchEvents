@@ -11,13 +11,13 @@
 @interface Event : NSObject
 
   @property(nonatomic)  NSString *address;
- @property(nonatomic)   NSString *date;
- @property(nonatomic)   NSString *desc;
- @property(nonatomic)   NSString *ID;
- @property(nonatomic)   NSString *location;
+  @property(nonatomic)  NSString *date;
+  @property(nonatomic)  NSString *desc;
+  @property(nonatomic)  NSString *ID;
+  @property(nonatomic)  NSString *location;
   @property(nonatomic)  NSString *name;
   @property(nonatomic)  NSString *rating;
-   @property(nonatomic) NSString *time;
+  @property(nonatomic)  NSString *time;
 
 
 

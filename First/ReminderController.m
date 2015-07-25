@@ -64,10 +64,21 @@ int k;
 
 - (IBAction)activateReminder
 {
+    NSString *od=@"25-07-2015";
+    NSString *ot=@"14:44";
     
-    
-    
-    
+    NSString *str = [NSString stringWithFormat: @"%@T%@:00",od,ot];
+   // NSString *dd=@"25-07-2015T14:39:00";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    // this is imporant - we set our input date format to match our input string
+    // if format doesn't match you'll get nil from your string, so be careful
+    [dateFormatter setDateFormat:@"dd-MM-yyyy'T'HH:mm:ss"];
+    NSDate *dateFromString = [[NSDate alloc] init];
+    // voila!
+    dateFromString = [dateFormatter dateFromString:str];
+    NSLog(@"Date : %@",dateFromString);
+    //NSString *stringFromDate = [dateFormatter stringFromDate:dateFromString];
+    //NSLog(@"stringFromDate: %@", stringFromDate);
     UIAlertView *helloWorldAlert = [[UIAlertView alloc]
                                     initWithTitle:@"Reminder Set" message:ret.text delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     // Display the  Message
@@ -75,10 +86,16 @@ int k;
     
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
     
+    /*
+    NSDateComponents *comp = [[NSDateComponents alloc] init];
+    [comp setDay:25];
+    [comp setMonth:7];
+    [comp setYear:2015];
+    NSDate *d = [[NSCalendar currentCalendar] dateFromComponents:comp];
     
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components: NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[NSDate date]];
+    NSDateComponents *comps = [calendar components: NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate: dateFromString];
     //k=12;
     [comps setHour:(((int)(ho.value))%12)+k];
     [comps setMinute:ti.value];
@@ -86,15 +103,15 @@ int k;
     
     
     NSDate *dateFromComps = [calendar dateFromComponents:comps];
-    
-    localNotification.fireDate= dateFromComps;
+    */
+    localNotification.fireDate= dateFromString;//dateFromComps;
     localNotification.alertBody = ret.text;
     localNotification.alertTitle=@"reminder";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     
     localNotification.alertAction = @"go back";
     
-    localNotification.repeatInterval= NSCalendarUnitDay ;
+    //localNotification.repeatInterval= NSCalendarUnitDay ;
     localNotification.soundName = UILocalNotificationDefaultSoundName;
     
     
@@ -102,7 +119,7 @@ int k;
     localNotification.userInfo=@{@"title" : @"reminder", @"body" : ret.text, @"key3" : @"value3"};
     
     
-        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 
@@ -118,16 +135,16 @@ int k;
     
     if (selectedSegment == 0) {
        
-        k=0;
+         k=0;
          NSLog(@"am");
 
     }
     else{
         
-        k=12;
+         k=12;
          NSLog(@"pm");
         
-            }
+        }
 }
 /*
 #pragma mark - Navigation

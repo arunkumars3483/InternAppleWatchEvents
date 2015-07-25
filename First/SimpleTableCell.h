@@ -18,5 +18,9 @@
 @property (nonatomic, weak) IBOutlet UILabel *time;
 @property (nonatomic, weak) IBOutlet UILabel *date;
 
-@property (nonatomic, weak) IBOutlet UIImageView *ratestar;
+@property (nonatomic, weak) IBOutlet UIImageView *star1;
+@property (nonatomic, weak) IBOutlet UIImageView *star2;
+@property (nonatomic, weak) IBOutlet UIImageView *star3;
+@property (nonatomic, weak) IBOutlet UIImageView *star4;
+@property (nonatomic, weak) IBOutlet UIImageView *star5;
 @end

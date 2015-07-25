@@ -22,7 +22,11 @@
 @property (nonatomic, weak) IBOutlet UILabel *addr;
 @property (nonatomic, weak) IBOutlet UILabel *dat;
 @property (nonatomic, weak) IBOutlet UILabel *tim;
-@property (nonatomic, weak) IBOutlet UIImageView *rat;
+@property (nonatomic, weak) IBOutlet UIImageView *star1;
+@property (nonatomic, weak) IBOutlet UIImageView *star2;
+@property (nonatomic, weak) IBOutlet UIImageView *star3;
+@property (nonatomic, weak) IBOutlet UIImageView *star4;
+@property (nonatomic, weak) IBOutlet UIImageView *star5;
 @property (nonatomic, weak) IBOutlet UILabel *des;
 
 

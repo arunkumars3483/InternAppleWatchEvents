@@ -52,7 +52,7 @@
         completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
 
-
+/*
 
 - (void)didReceiveRemoteNotification:(NSDictionary *)remoteNotification withCompletion:(void (^)(WKUserNotificationInterfaceType))completionHandler {
     // This method is called when a remote notification needs to be presented.
@@ -73,7 +73,7 @@
     completionHandler(WKUserNotificationInterfaceTypeCustom);
 }
 
-
+*/
 @end
 
 

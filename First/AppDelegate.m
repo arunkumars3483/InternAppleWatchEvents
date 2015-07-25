@@ -20,20 +20,12 @@
     dd=[[NSString alloc ]init];
     UIUserNotificationType types = UIUserNotificationTypeBadge |
     UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
-    //  UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    
     UIUserNotificationSettings *mySettings =
     [UIUserNotificationSettings settingsForTypes:types categories:nil];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
     [[UIApplication sharedApplication] registerForRemoteNotifications];
-    /*
-    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (localNotification) {
-        application.applicationIconBadgeNumber = 1;
-    }
-    */
-    // Override point for customization after application launch.
-    
     
         
     
@@ -67,21 +59,19 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-   // application.applicationIconBadgeNumber = 0;
-   // NSLog(@"sdf : %@",notification);
     
     NSDictionary *det=notification.userInfo;
     NSString *title=[det objectForKey:@"title"];
     NSString *body=[det objectForKey:@"body"];
-    
-    
+        
     UIAlertView *helloWorldAlert = [[UIAlertView alloc] initWithTitle:title message:body delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     // Display the Hello World Message
     [helloWorldAlert show];
-    
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+   
 }
-
+/*
 #pragma mark - watch kit request handling
 
 - (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void(^)(NSDictionary *replyInfo))reply {
@@ -94,7 +84,7 @@
     
         
 }
-
+*/
 
 
 

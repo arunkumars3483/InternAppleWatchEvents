@@ -10,14 +10,13 @@
 #import "Event.h"
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    IBOutlet UILabel *mytext;
+   
    
     Event *details;
     NSMutableArray *events;
    
 
 }
-    -(IBAction)showMessage;
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 

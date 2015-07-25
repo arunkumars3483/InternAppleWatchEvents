@@ -44,7 +44,7 @@
     annotation.url = mapItem.url;
     [self.mapView addAnnotation:annotation];
     
-    // we have only one annotation, select it's callout
+    
     [self.mapView selectAnnotation:[self.mapView.annotations objectAtIndex:0] animated:YES];
     
     // center the region around this map item's coordinate

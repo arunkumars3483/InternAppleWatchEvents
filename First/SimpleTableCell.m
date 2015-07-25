@@ -17,7 +17,11 @@
 @synthesize date = _date;
 @synthesize ti = _ti;
 @synthesize cl = _cal;
-@synthesize ratestar=_ratt;
+@synthesize star1;
+@synthesize star2;
+@synthesize star3;
+@synthesize star4;
+@synthesize star5;
 - (void)awakeFromNib {
     // Initialization code
 }

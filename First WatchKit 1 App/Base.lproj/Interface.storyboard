@@ -17,17 +17,17 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label width="134" height="144" alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
                         <label width="136" height="70" alignment="left" text="Label" id="laU-hp-Ogz"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="m" id="JfB-70-Muf"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="cIw-VR-pDB" kind="relationship" relationship="dynamicNotificationInterface" id="fYU-Um-QuR"/>
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="680.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="ssa-ZA-Tfa">

@@ -66,14 +66,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - IBAction Methods
-
-- (IBAction)showMessage
-{
-    mytext.text=@"text changed for button pressw";
-    
-    }
-
 
 #pragma mark - UITableView delegate methods
 
@@ -84,12 +76,12 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tablView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
        static NSString *simpleTableIdentifier = @"RecipeCell";
     
    // UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    SimpleTableCell *cell = (SimpleTableCell *)[tablView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
         cell = [[SimpleTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
@@ -111,28 +103,57 @@
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     switch (x) {
         case 1:
-            cell.ratestar.image = [UIImage imageNamed:@"1star"];
+            cell.star1.image = [UIImage imageNamed:@"selected"];
+            cell.star2.image = [UIImage imageNamed:@"notselected"];
+            cell.star3.image = [UIImage imageNamed:@"notselected"];
+            cell.star4.image = [UIImage imageNamed:@"notselected"];
+            cell.star5.image = [UIImage imageNamed:@"notselected"];
             break;
         case 2:
-            cell.ratestar.image = [UIImage imageNamed:@"2star"];
+            cell.star1.image = [UIImage imageNamed:@"selected"];
+            cell.star2.image = [UIImage imageNamed:@"selected"];
+            cell.star3.image = [UIImage imageNamed:@"notselected"];
+            cell.star4.image = [UIImage imageNamed:@"notselected"];
+            cell.star5.image = [UIImage imageNamed:@"notselected"];
 
             break;
         case 3:
-            cell.ratestar.image = [UIImage imageNamed:@"3star"];
+            
+            cell.star1.image = [UIImage imageNamed:@"selected"];
+            cell.star2.image = [UIImage imageNamed:@"selected"];
+            cell.star3.image = [UIImage imageNamed:@"selected"];
+            cell.star4.image = [UIImage imageNamed:@"notselected"];
+            cell.star5.image = [UIImage imageNamed:@"notselected"];
 
             break;
         case 4:
-            cell.ratestar.image = [UIImage imageNamed:@"4star"];
+            
+            cell.star1.image = [UIImage imageNamed:@"selected"];
+            cell.star2.image = [UIImage imageNamed:@"selected"];
+            cell.star3.image = [UIImage imageNamed:@"selected"];
+            cell.star4.image = [UIImage imageNamed:@"selected"];
+            cell.star5.image = [UIImage imageNamed:@"notselected"];
 
             break;
         case 5:
-            cell.ratestar.image = [UIImage imageNamed:@"5star"];
+            
+            cell.star1.image = [UIImage imageNamed:@"selected"];
+            cell.star2.image = [UIImage imageNamed:@"selected"];
+            cell.star3.image = [UIImage imageNamed:@"selected"];
+            cell.star4.image = [UIImage imageNamed:@"selected"];
+            cell.star5.image = [UIImage imageNamed:@"selected"];
+            
 
             break;
             
             
         default:
-            cell.ratestar.image = [UIImage imageNamed:@"1star"];
+            cell.star1.image = [UIImage imageNamed:@"notselected"];
+            cell.star2.image = [UIImage imageNamed:@"notselected"];
+            cell.star3.image = [UIImage imageNamed:@"notselected"];
+            cell.star4.image = [UIImage imageNamed:@"notselected"];
+            cell.star5.image = [UIImage imageNamed:@"notselected"];
+
             break;
     }
 cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell"] ] ;

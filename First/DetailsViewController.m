@@ -35,7 +35,11 @@
 @synthesize addr;
 @synthesize dat;
 @synthesize tim;
-@synthesize rat;
+@synthesize star1;
+@synthesize star2;
+@synthesize star3;
+@synthesize star4;
+@synthesize star5;
 @synthesize des;
 @synthesize locationmanager;
 @synthesize  mapItemList;
@@ -55,28 +59,51 @@
     //cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
     switch (x) {
         case 1:
-           rat.image = [UIImage imageNamed:@"1star"];
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"notselected"];
+            star3.image = [UIImage imageNamed:@"notselected"];
+            star4.image = [UIImage imageNamed:@"notselected"];
+            star5.image = [UIImage imageNamed:@"notselected"];
             break;
         case 2:
-            rat.image = [UIImage imageNamed:@"2star"];
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"selected"];
+            star3.image = [UIImage imageNamed:@"notselected"];
+            star4.image = [UIImage imageNamed:@"notselected"];
+            star5.image = [UIImage imageNamed:@"notselected"];
             
             break;
         case 3:
-            rat.image = [UIImage imageNamed:@"3star"];
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"selected"];
+            star3.image = [UIImage imageNamed:@"selected"];
+            star4.image = [UIImage imageNamed:@"notselected"];
+            star5.image = [UIImage imageNamed:@"notselected"];
             
             break;
         case 4:
-           rat.image = [UIImage imageNamed:@"4star"];
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"selected"];
+            star3.image = [UIImage imageNamed:@"selected"];
+            star4.image = [UIImage imageNamed:@"selected"];
+            star5.image = [UIImage imageNamed:@"notselected"];
             
             break;
         case 5:
-            rat.image = [UIImage imageNamed:@"5star"];
-            
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"selected"];
+            star3.image = [UIImage imageNamed:@"selected"];
+            star4.image = [UIImage imageNamed:@"selected"];
+            star5.image = [UIImage imageNamed:@"selected"];
             break;
             
             
         default:
-            rat.image = [UIImage imageNamed:@"1star"];
+            star1.image = [UIImage imageNamed:@"selected"];
+            star2.image = [UIImage imageNamed:@"notselected"];
+            star3.image = [UIImage imageNamed:@"notselected"];
+            star4.image = [UIImage imageNamed:@"notselected"];
+            star5.image = [UIImage imageNamed:@"notselected"];
             break;
     }
 
@@ -122,7 +149,7 @@
             
            //perform action here
         MKMapItem *mapItem = [self.places objectAtIndex:0];
-       NSLog(@"%@",mapItem.name);
+        NSLog(@"%@",mapItem.name);
         
         
         // adjust the map to zoom/center to the annotations we want to show
@@ -170,7 +197,7 @@
    
 }
 
-- (IBAction)noti
+- (IBAction)notify
 {
  /*
     UILocalNotification *localNotification = [[UILocalNotification alloc] init];
@@ -190,6 +217,60 @@
     [mySharedDefaults setObject:@"dfg" forKey:@"lastAccountName"];
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
    */
+    
+    
+    
+   
+        NSString *od=self.deta.date;
+        NSString *ot=self.deta.time;
+        
+        NSString *str = [NSString stringWithFormat: @"%@T%@:00",od,ot];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+        [dateFormatter setDateFormat:@"dd-MM-yyyy'T'HH:mm:ss"];
+        NSDate *dateFromString = [[NSDate alloc] init];
+    
+        dateFromString = [dateFormatter dateFromString:str];
+        NSLog(@"Date : %@",dateFromString);
+        UIAlertView *helloWorldAlert = [[UIAlertView alloc]
+                                        initWithTitle:@"Reminder Set" message:[NSString stringWithFormat: @"Reminder for Event - %@ is set and will be notified 1 hour before the scheduled time.",self.deta.name] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        // Display the  Message
+        [helloWorldAlert show];
+        
+        UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+        NSDateComponents *dc = [[NSDateComponents alloc] init];
+    
+        [dc setHour:-1];
+        NSDate *fire = [[NSCalendar currentCalendar] dateByAddingComponents:dc toDate:dateFromString options:0];
+    
+    
+        localNotification.fireDate= fire;
+        localNotification.alertBody = [NSString stringWithFormat: @"The Event - %@ is about to start at %@ %@",self.deta.name,self.deta.time,self.deta.date];
+        localNotification.alertTitle=@"Reminder : ";
+        localNotification.timeZone = [NSTimeZone defaultTimeZone];
+        
+        localNotification.alertAction = @"go back";
+        
+        //localNotification.repeatInterval= NSCalendarUnitDay ;
+        localNotification.soundName = UILocalNotificationDefaultSoundName;
+        
+        
+        localNotification.applicationIconBadgeNumber = 1;
+        localNotification.category = @"";
+        localNotification.userInfo=@{@"title" : @"Reminder : ", @"body" : [NSString stringWithFormat: @"The Event - %@ is about to start at %@ %@",self.deta.name,self.deta.time,self.deta.date], @"key3" : @"value3"};
+        
+        
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+
+    
+    
+    
+    
+    
+    
 }
 
 
