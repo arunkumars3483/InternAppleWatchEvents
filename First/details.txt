@@ -2,9 +2,9 @@
     [               {
                     "Id":"1",
                    "Name":"Ritu 15",
-                   "Date":"15-02-2016",
+                   "Date":"25-07-2015",
                     "Location":"Kenya",
-                    "Time":"12:00",
+                    "Time":"19:27",
                     "Rating":"3",
 "Address":"Jubilee Exchange House, Mama Ngina Street, Nairobi",
 "Description":"RITU is the festival of illumination which represents the technological realm devoted to the technical events of RITU."
