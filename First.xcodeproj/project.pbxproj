@@ -89,7 +89,7 @@
 		F42C096A1B5E032600CECFB8 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		F42C096C1B5E143500CECFB8 /* CalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalController.h; sourceTree = "<group>"; };
 		F42C096D1B5E143500CECFB8 /* CalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalController.m; sourceTree = "<group>"; };
-		F42C096F1B5E276E00CECFB8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		F42C096F1B5E276E00CECFB8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = First/images; sourceTree = "<group>"; };
 		F44646CF1B577F34003A3296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F44646D11B577F52003A3296 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F44646D51B578EF8003A3296 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceAnnotation.h; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.h; sourceTree = "<group>"; };
@@ -208,7 +208,6 @@
 				F4477C9C1B54ECE50062C2A5 /* LaunchScreen.storyboard */,
 				F4477C971B54ECE50062C2A5 /* Main.storyboard */,
 				F4477C9A1B54ECE50062C2A5 /* Assets.xcassets */,
-				F42C096F1B5E276E00CECFB8 /* images */,
 				F4477C8E1B54ECE50062C2A5 /* Supporting Files */,
 				F463C4171B5A71A6009944BD /* Events.xcdatamodeld */,
 				F4477C9F1B54ECE50062C2A5 /* Info.plist */,
@@ -279,6 +278,7 @@
 		F4DE45361B6262D00098F175 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F42C096F1B5E276E00CECFB8 /* images */,
 				F4477C8D1B54ECE50062C2A5 /* First */,
 			);
 			name = First;
