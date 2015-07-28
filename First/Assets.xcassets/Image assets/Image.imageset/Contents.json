@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "loc.png",
+      "filename" : "bs.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "loc-1.png",
+      "filename" : "bs-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "loc-2.png",
+      "filename" : "bs-2.png",
       "scale" : "3x"
     }
   ],
