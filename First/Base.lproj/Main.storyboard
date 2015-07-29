@@ -46,8 +46,7 @@
                                                             <exclude reference="yZw-xU-aZi"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="271" y="84" width="88" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="yZw-xU-aZi"/>
                                                         </mask>
@@ -84,8 +83,7 @@
                                                             <exclude reference="wcJ-CY-EgJ"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="162" y="87" width="18" height="15"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="oN6-MF-qBG"/>
                                                             <include reference="wcJ-CY-EgJ"/>
@@ -104,8 +102,7 @@
                                                             <exclude reference="RDX-5r-BRO"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="182" y="84" width="68" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="RDX-5r-BRO"/>
                                                         </mask>
@@ -123,8 +120,7 @@
                                                             <exclude reference="nJb-p5-O7M"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="251" y="84" width="18" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="CTN-Gh-kPE"/>
                                                             <include reference="nJb-p5-O7M"/>
@@ -162,8 +158,7 @@
                                                             <exclude reference="Vkv-cu-qfL"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="11" y="18" width="345" height="43"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="Vkv-cu-qfL"/>
                                                         </mask>
@@ -181,8 +176,7 @@
                                                             <exclude reference="gPj-Od-EI9"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="28" y="84" width="133" height="21"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="gPj-Od-EI9"/>
                                                         </mask>
@@ -426,7 +420,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="Vp7-il-GmL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="tableView" destination="Cq4-xK-Edy" id="yCE-Ng-07y"/>
                     </connections>
@@ -1806,7 +1799,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B14-gb-57d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="1051"/>
+            <point key="canvasLocation" x="73" y="1148"/>
         </scene>
         <!--Reminder-->
         <scene sceneID="LOK-jW-QM2">

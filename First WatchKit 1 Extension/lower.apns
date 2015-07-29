@@ -1,8 +1,0 @@
-{
-    "aps":{
-        "alert":"Your Message",
-        "sound":"push1.wav"
-    },
-    "custom_key1":"value1",
-    "custom_key2":"value2"
-}
