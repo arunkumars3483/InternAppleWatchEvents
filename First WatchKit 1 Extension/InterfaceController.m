@@ -9,7 +9,7 @@
 #import "InterfaceController.h"
 #import "Event.h"
 #import "Cell.h"
-
+#import<CoreData/CoreData.h>
 @interface InterfaceController()
 {
     NSMutableArray *events;
@@ -22,6 +22,35 @@
 @synthesize ev;
 @synthesize table;
 
+@synthesize devices;
+
+- (NSManagedObjectContext *)managedObjectContext {
+    // NSManagedObjectContext *context = nil;
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
+    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
+    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
+    
+    NSPersistentStore *store = nil;
+    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    NSError *error=nil;
+    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                      configuration:nil
+                                                URL:storeURL
+                                            options:nil
+                                              error:&error];
+    
+    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+    return managedObjectContext;
+}
+
+
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
         // Configure interface objects here.
@@ -31,8 +60,44 @@
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
     
+    /*
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
+    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+
     
-    NSArray *sd=@[@"Dollar", @"Euro", @"Pound",@"dfgdfg",@"fgdfgdfgf", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound", @"Pound"];
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
+    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
+    
+      NSPersistentStore *store = nil;
+    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    NSError *error=nil;
+    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                      configuration:nil
+                                                URL:storeURL
+                                            options:nil
+                                              error:&error];
+    
+    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+*/
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Events"];
+    self.devices = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    
+    
+    NSManagedObject *device = [self.devices objectAtIndex:0];
+    NSLog(@"get it : %@",[device valueForKey:@"name"]);
+    
+
+    
+    
+    
+    
+    
+    
+    
     
     //events=[[NSMutableArray alloc] init];
     

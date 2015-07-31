@@ -12,4 +12,6 @@
 @interface InterfaceController : WKInterfaceController
 @property(nonatomic,weak) IBOutlet WKInterfaceLabel *ev;
 @property (weak, nonatomic) IBOutlet WKInterfaceTable* table;
+@property (strong) NSMutableArray *devices;
+
 @end

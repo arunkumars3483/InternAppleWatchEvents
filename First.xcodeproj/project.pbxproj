@@ -30,6 +30,8 @@
 		F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */; };
 		F45B50401B5FBBA70025DA04 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B503F1B5FBBA70025DA04 /* WatchKit.framework */; };
 		F463C4191B5A71A6009944BD /* First.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* First.xcdatamodeld */; };
+		F46D95E31B6B535000EF5D3C /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = F46D95E21B6B535000EF5D3C /* Events.m */; };
+		F46D95E61B6B649100EF5D3C /* First.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F46D95E41B6B649100EF5D3C /* First.xcdatamodeld */; };
 		F4827FC71B60C88F00C3CA49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC61B60C88F00C3CA49 /* InterfaceController.m */; };
 		F4827FCA1B60C88F00C3CA49 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC91B60C88F00C3CA49 /* NotificationController.m */; };
 		F4827FCC1B60C88F00C3CA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */; };
@@ -131,6 +133,9 @@
 		F463C4181B5A71A6009944BD /* First.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = First.xcdatamodel; sourceTree = "<group>"; };
 		F46D95DE1B6B45DD00EF5D3C /* First WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "First WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
 		F46D95DF1B6B461600EF5D3C /* First WatchKit 1 App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "First WatchKit 1 App.entitlements"; sourceTree = "<group>"; };
+		F46D95E11B6B535000EF5D3C /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		F46D95E21B6B535000EF5D3C /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		F46D95E51B6B649100EF5D3C /* First.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = First.xcdatamodel; sourceTree = "<group>"; };
 		F4827FC11B60C88F00C3CA49 /* First WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "First WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4827FC41B60C88F00C3CA49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F4827FC51B60C88F00C3CA49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -269,6 +274,7 @@
 				F4827FC91B60C88F00C3CA49 /* NotificationController.m */,
 				F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */,
 				F4827FCD1B60C88F00C3CA49 /* Info.plist */,
+				F46D95E41B6B649100EF5D3C /* First.xcdatamodeld */,
 				F4827FC31B60C88F00C3CA49 /* Supporting Files */,
 				F423DF161B6A2A670036590C /* Event.h */,
 				F423DF171B6A2A670036590C /* Event.m */,
@@ -276,6 +282,8 @@
 				F423DF1C1B6A33A90036590C /* Cell.m */,
 				F4DF49841B6B257000B19BE8 /* secondInterfaceController.h */,
 				F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */,
+				F46D95E11B6B535000EF5D3C /* Events.h */,
+				F46D95E21B6B535000EF5D3C /* Events.m */,
 			);
 			path = "First WatchKit 1 Extension";
 			sourceTree = "<group>";
@@ -534,6 +542,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46D95E61B6B649100EF5D3C /* First.xcdatamodeld in Resources */,
 				F423DF1A1B6A2C1E0036590C /* details.txt in Resources */,
 				F4827FD11B60C88F00C3CA49 /* First WatchKit 1 App.app in Resources */,
 				F4827FE51B60D66300C3CA49 /* mynoti.apns in Resources */,
@@ -592,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46D95E31B6B535000EF5D3C /* Events.m in Sources */,
 				F423DF181B6A2A670036590C /* Event.m in Sources */,
 				F423DF1D1B6A33A90036590C /* Cell.m in Sources */,
 				F4827FCA1B60C88F00C3CA49 /* NotificationController.m in Sources */,
@@ -953,6 +963,16 @@
 				F463C4181B5A71A6009944BD /* First.xcdatamodel */,
 			);
 			currentVersion = F463C4181B5A71A6009944BD /* First.xcdatamodel */;
+			path = First.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		F46D95E41B6B649100EF5D3C /* First.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F46D95E51B6B649100EF5D3C /* First.xcdatamodel */,
+			);
+			currentVersion = F46D95E51B6B649100EF5D3C /* First.xcdatamodel */;
 			path = First.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

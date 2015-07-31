@@ -17,15 +17,49 @@
 @implementation ViewController
 @synthesize tableView;
 
+-(void)deleteEverything{
 
+    NSManagedObjectContext *myContext=[self managedObjectContext];
+    NSFetchRequest *allCars = [[NSFetchRequest alloc] init];
+    [allCars setEntity:[NSEntityDescription entityForName:@"Events" inManagedObjectContext:myContext]];
+    [allCars setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    NSError *error = nil;
+    NSArray *cars = [myContext executeFetchRequest:allCars error:&error];
+        //error handling goes here
+    for (NSManagedObject *car in cars) {
+        [myContext deleteObject:car];
+    }
+    NSError *saveError = nil;
+    [myContext save:&saveError];
+    //more error handling here
+
+}
 
 - (NSManagedObjectContext *)managedObjectContext {
-    NSManagedObjectContext *context = nil;
-    id delegate = [[UIApplication sharedApplication] delegate];
-    if ([delegate performSelector:@selector(managedObjectContext)]) {
-        context = [delegate managedObjectContext];
-    }
-    return context;
+   // NSManagedObjectContext *context = nil;
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
+    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
+    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
+    
+    NSPersistentStore *store = nil;
+    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    NSError *error=nil;
+    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                      configuration:nil
+                                                URL:storeURL
+                                            options:nil
+                                              error:&error];
+    
+    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+    return managedObjectContext;
 }
 
 
@@ -36,11 +70,43 @@
     
     
     
+    
+    
+    
+    
+    /*
+    
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
+    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
+    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
+    
+    NSPersistentStore *store = nil;
+    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    NSError *error=nil;
+    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                      configuration:nil
+                                                URL:storeURL
+                                            options:nil
+                                              error:&error];
+    
+    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+   */
+    
+    NSError *error=nil;
+    
     NSManagedObjectContext *context = [self managedObjectContext];
     
     // Create a new managed object
+    
     NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Events" inManagedObjectContext:context];
-    [newDevice setValue:@"mecca" forKey:@"name"];
+    [newDevice setValue:@"I am the third index" forKey:@"name"];
     /*
     [newDevice setValue:@"hee" forKey:@"version"];
     [newDevice setValue:@"hee" forKey:@"company"];
@@ -51,12 +117,16 @@
     [newDevice setValue:@"hee" forKey:@"version"];
     */
     
-    NSError *error = nil;
+    error = nil;
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
     }
-    
+    else{
+        NSLog(@"successsss");
+    }
+   // [self deleteEverything];
+    /*
     // Fetch the devices from persistent data store
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Events"];
@@ -65,7 +135,7 @@
     
     NSManagedObject *device = [self.devices objectAtIndex:0];
     NSLog(@"get it : %@",[device valueForKey:@"name"]);
-    
+    */
     events=[[NSMutableArray alloc] init];
     
     
