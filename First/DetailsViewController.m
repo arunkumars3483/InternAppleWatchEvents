@@ -10,6 +10,7 @@
 #import "PlaceAnnotation.h"
 #import "AppDelegate.h"
 #import "MapScreenControllerViewController.h"
+#import <CoreData/CoreData.h>
 @interface DetailsViewController ()
 @property (nonatomic, strong) PlaceAnnotation *annotation;
 
@@ -25,7 +26,7 @@
 @end
 
 @implementation DetailsViewController
-
+@synthesize  devices;
 @synthesize places;
 @synthesize recipeLabel;
 @synthesize bc;
@@ -117,6 +118,31 @@
 
 
 
+- (NSManagedObjectContext *)managedObjectContext {
+    // NSManagedObjectContext *context = nil;
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
+    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
+    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
+    
+    NSPersistentStore *store = nil;
+    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    NSError *error=nil;
+    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                      configuration:nil
+                                                URL:storeURL
+                                            options:nil
+                                              error:&error];
+    
+    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator:coordinator];
+    
+    return managedObjectContext;
+}
 
 
 - (void)viewDidAppear:(BOOL)animated
@@ -184,8 +210,7 @@
     
     [self.localSearch startWithCompletionHandler:completionHandler];
 
-    
-    
+       
 }
 
 #pragma mark - IBAction Methods
@@ -217,6 +242,65 @@
     [mySharedDefaults setObject:@"dfg" forKey:@"lastAccountName"];
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
    */
+    
+    
+    
+    
+    
+    
+    int subscribed =0;
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Events"];
+    self.devices = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    //   [self.tableView reloadData];
+    
+    
+    
+   // dataObjects=[[NSMutableArray alloc]init];
+    
+    for (NSInteger i=0; i<self.devices.count; i++) {
+        //  NSDictionary *arrayResult = [allKeys objectAtIndex:i]; */
+        
+        
+        
+        NSManagedObject *device = [self.devices objectAtIndex:i];
+        //  [dataObjects addObject:[device valueForKey:@"eventName"]];
+        // NSLog(@"%@",item.eventid);
+        
+        if([self.deta.ID isEqualToString:[device valueForKey:@"eventId"]])
+        {
+            subscribed =1;
+            
+            NSLog(@"Already Subscribed");
+            break;
+        }
+    }
+    
+    if( subscribed ==0) {
+        NSManagedObjectContext *context = [self managedObjectContext];
+        
+        NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Events" inManagedObjectContext:context];
+        
+        
+        [newDevice setValue:self.deta.name forKey:@"name"];
+        [newDevice setValue:self.deta.time forKey:@"time"];
+        [newDevice setValue:self.deta.date forKey:@"date"];
+        [newDevice setValue:self.deta.location forKey:@"location"];
+        [newDevice setValue:self.deta.address forKey:@"address"];
+        [newDevice setValue:self.deta.desc forKey:@"desc"];
+        [newDevice setValue:self.deta.ID forKey:@"eventId"];
+        [newDevice setValue:self.deta.rating forKey:@"rating"];
+        
+        NSError *error = nil;
+        // Save the object to persistent store
+        if (![context save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);    }
+        
+        // NSLog(@"Event name;%@",[newDevice valueForKey:@"eventName"]);
+    }
+    
+    
     
     
     

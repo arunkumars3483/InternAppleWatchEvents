@@ -16,7 +16,7 @@
 -(IBAction)dismisswindow;
 @property (nonatomic, strong) IBOutlet UILabel *recipeLabel;
 
-
+@property (strong) NSMutableArray *devices;
 @property (nonatomic, weak) IBOutlet UIView *bc;
 @property (nonatomic, weak) IBOutlet UILabel *loc;
 @property (nonatomic, weak) IBOutlet UILabel *addr;

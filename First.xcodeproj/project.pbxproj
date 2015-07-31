@@ -17,7 +17,6 @@
 		F42C09A11B5E55CE00CECFB8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F42C096F1B5E276E00CECFB8 /* images */; };
 		F42C09A21B5E55E200CECFB8 /* main.m in Resources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646CF1B577F34003A3296 /* CoreLocation.framework */; };
-		F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
 		F4477C901B54ECE50062C2A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C921B54ECE50062C2A5 /* AppDelegate.m */; };
 		F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C951B54ECE50062C2A5 /* ViewController.m */; };
@@ -32,6 +31,7 @@
 		F463C4191B5A71A6009944BD /* First.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* First.xcdatamodeld */; };
 		F46D95E31B6B535000EF5D3C /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = F46D95E21B6B535000EF5D3C /* Events.m */; };
 		F46D95E61B6B649100EF5D3C /* First.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F46D95E41B6B649100EF5D3C /* First.xcdatamodeld */; };
+		F46D95E81B6B72A500EF5D3C /* images in Resources */ = {isa = PBXBuildFile; fileRef = F46D95E71B6B72A500EF5D3C /* images */; };
 		F4827FC71B60C88F00C3CA49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC61B60C88F00C3CA49 /* InterfaceController.m */; };
 		F4827FCA1B60C88F00C3CA49 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC91B60C88F00C3CA49 /* NotificationController.m */; };
 		F4827FCC1B60C88F00C3CA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */; };
@@ -41,6 +41,7 @@
 		F4827FDD1B60C88F00C3CA49 /* First WatchKit 1 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F4827FC11B60C88F00C3CA49 /* First WatchKit 1 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F4827FE51B60D66300C3CA49 /* mynoti.apns in Resources */ = {isa = PBXBuildFile; fileRef = F4827FE41B60D66300C3CA49 /* mynoti.apns */; };
 		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
+		F4C6D2C21B6B95E90070A59C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
 		F4D657DC1B563D57004D7D24 /* details.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4D657DB1B562D8A004D7D24 /* details.txt */; };
 		F4DE45351B61E9920098F175 /* ReminderController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE45341B61E9920098F175 /* ReminderController.m */; };
 		F4DF49861B6B257000B19BE8 /* secondInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */; };
@@ -136,6 +137,7 @@
 		F46D95E11B6B535000EF5D3C /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
 		F46D95E21B6B535000EF5D3C /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
 		F46D95E51B6B649100EF5D3C /* First.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = First.xcdatamodel; sourceTree = "<group>"; };
+		F46D95E71B6B72A500EF5D3C /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = "../First WatchKit 1 App/images"; sourceTree = "<group>"; };
 		F4827FC11B60C88F00C3CA49 /* First WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "First WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4827FC41B60C88F00C3CA49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F4827FC51B60C88F00C3CA49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -163,8 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C6D2C21B6B95E90070A59C /* MapKit.framework in Frameworks */,
 				F45B50401B5FBBA70025DA04 /* WatchKit.framework in Frameworks */,
-				F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */,
 				F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +195,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4034F461B6BB2F80034AA03 /* Interface Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4827FC51B60C88F00C3CA49 /* InterfaceController.h */,
+				F4827FC61B60C88F00C3CA49 /* InterfaceController.m */,
+				F4DF49841B6B257000B19BE8 /* secondInterfaceController.h */,
+				F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */,
+			);
+			name = "Interface Controllers";
+			sourceTree = "<group>";
+		};
+		F4034F471B6BB31C0034AA03 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F4827FC81B60C88F00C3CA49 /* NotificationController.h */,
+				F4827FC91B60C88F00C3CA49 /* NotificationController.m */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		F4034F481B6BB3350034AA03 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F423DF161B6A2A670036590C /* Event.h */,
+				F423DF171B6A2A670036590C /* Event.m */,
+				F423DF1B1B6A33A90036590C /* Cell.h */,
+				F423DF1C1B6A33A90036590C /* Cell.m */,
+				F46D95E11B6B535000EF5D3C /* Events.h */,
+				F46D95E21B6B535000EF5D3C /* Events.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		F4477C821B54ECE50062C2A5 = {
 			isa = PBXGroup;
 			children = (
@@ -267,23 +302,15 @@
 		F4827FC21B60C88F00C3CA49 /* First WatchKit 1 Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F4034F481B6BB3350034AA03 /* Utilities */,
+				F4034F471B6BB31C0034AA03 /* Notification */,
+				F4034F461B6BB2F80034AA03 /* Interface Controllers */,
+				F46D95E71B6B72A500EF5D3C /* images */,
 				F46D95DE1B6B45DD00EF5D3C /* First WatchKit 1 Extension.entitlements */,
-				F4827FC51B60C88F00C3CA49 /* InterfaceController.h */,
-				F4827FC61B60C88F00C3CA49 /* InterfaceController.m */,
-				F4827FC81B60C88F00C3CA49 /* NotificationController.h */,
-				F4827FC91B60C88F00C3CA49 /* NotificationController.m */,
 				F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */,
 				F4827FCD1B60C88F00C3CA49 /* Info.plist */,
 				F46D95E41B6B649100EF5D3C /* First.xcdatamodeld */,
 				F4827FC31B60C88F00C3CA49 /* Supporting Files */,
-				F423DF161B6A2A670036590C /* Event.h */,
-				F423DF171B6A2A670036590C /* Event.m */,
-				F423DF1B1B6A33A90036590C /* Cell.h */,
-				F423DF1C1B6A33A90036590C /* Cell.m */,
-				F4DF49841B6B257000B19BE8 /* secondInterfaceController.h */,
-				F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */,
-				F46D95E11B6B535000EF5D3C /* Events.h */,
-				F46D95E21B6B535000EF5D3C /* Events.m */,
 			);
 			path = "First WatchKit 1 Extension";
 			sourceTree = "<group>";
@@ -542,6 +569,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46D95E81B6B72A500EF5D3C /* images in Resources */,
 				F46D95E61B6B649100EF5D3C /* First.xcdatamodeld in Resources */,
 				F423DF1A1B6A2C1E0036590C /* details.txt in Resources */,
 				F4827FD11B60C88F00C3CA49 /* First WatchKit 1 App.app in Resources */,

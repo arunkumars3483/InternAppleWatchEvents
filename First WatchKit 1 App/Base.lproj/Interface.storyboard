@@ -16,11 +16,23 @@
                         <table alignment="left" spacing="3" id="7HM-A0-XA1">
                             <items>
                                 <tableRow identifier="mainRowType" id="H6b-9d-M2J" customClass="Cell">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rih-iq-uM7">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="rih-iq-uM7">
                                         <items>
                                             <label width="125" alignment="left" text="Label" id="EAt-wI-RCN">
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
+                                            <group width="1" alignment="left" id="DG9-3M-cMM">
+                                                <items>
+                                                    <imageView width="24" height="21" alignment="left" image="tim" id="YE1-v2-Dra"/>
+                                                    <label width="95" height="22" alignment="left" text="Label" id="xij-WQ-VTS"/>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="u1a-Wp-GX4">
+                                                <items>
+                                                    <imageView width="24" height="21" alignment="left" image="date" id="xnR-lR-USo"/>
+                                                    <label width="95" height="22" alignment="left" text="Label" id="Orx-pa-aWb"/>
+                                                </items>
+                                            </group>
                                         </items>
                                         <color key="backgroundColor" red="0.83903488010000005" green="0.83903488010000005" blue="0.83903488010000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>

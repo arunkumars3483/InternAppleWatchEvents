@@ -71,33 +71,9 @@
     
     
     
-    
-    
-    
     /*
     
     
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"First" withExtension:@"momd"];
-    NSManagedObjectModel * managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    
-    
-    
-    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.qburst.watch"];
-    storeURL = [storeURL URLByAppendingPathComponent:@"First.sqlite"];
-    
-    NSPersistentStore *store = nil;
-    NSPersistentStoreCoordinator *coordinator=[[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
-    NSError *error=nil;
-    store = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
-                                      configuration:nil
-                                                URL:storeURL
-                                            options:nil
-                                              error:&error];
-    
-    NSManagedObjectContext * managedObjectContext = [[NSManagedObjectContext alloc] init];
-    [managedObjectContext setPersistentStoreCoordinator:coordinator];
-    
-   */
     
     NSError *error=nil;
     
@@ -107,15 +83,7 @@
     
     NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Events" inManagedObjectContext:context];
     [newDevice setValue:@"I am the third index" forKey:@"name"];
-    /*
-    [newDevice setValue:@"hee" forKey:@"version"];
-    [newDevice setValue:@"hee" forKey:@"company"];
-    [newDevice setValue:@"mecca" forKey:@"name"];
-    [newDevice setValue:@"hee" forKey:@"version"];
-    [newDevice setValue:@"hee" forKey:@"company"];
-    [newDevice setValue:@"mecca" forKey:@"name"];
-    [newDevice setValue:@"hee" forKey:@"version"];
-    */
+    
     
     error = nil;
     // Save the object to persistent store
@@ -125,7 +93,7 @@
     else{
         NSLog(@"successsss");
     }
-   // [self deleteEverything];
+    [self deleteEverything]; */
     /*
     // Fetch the devices from persistent data store
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];

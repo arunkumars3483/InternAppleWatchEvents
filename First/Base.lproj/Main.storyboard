@@ -381,7 +381,7 @@
                                             <outlet property="star5" destination="o1m-J0-tsb" id="y8h-SE-2Sf"/>
                                             <outlet property="time" destination="V04-18-TCR" id="aok-cg-YJD"/>
                                             <outlet property="venue" destination="Jik-da-Kkv" id="eQV-9a-MgJ"/>
-                                            <segue destination="8IA-Hc-VD2" kind="show" identifier="showRecipeDetail" id="NeZ-pm-c95"/>
+                                            <segue destination="8IA-Hc-VD2" kind="show" identifier="showRecipeDetail" id="XTE-4z-s8F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -673,11 +673,11 @@
                                             <exclude reference="Are-Wp-uC4"/>
                                             <exclude reference="UGg-hy-LkM"/>
                                             <exclude reference="zQE-h8-dQa"/>
-                                            <exclude reference="Hzt-i6-9TY"/>
-                                            <exclude reference="hBl-04-gJE"/>
                                             <exclude reference="7AK-AJ-Ry3"/>
                                             <exclude reference="JQd-Dr-WEM"/>
                                             <exclude reference="OIk-tO-6MH"/>
+                                            <exclude reference="Hzt-i6-9TY"/>
+                                            <exclude reference="hBl-04-gJE"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -705,11 +705,11 @@
                                             <include reference="Are-Wp-uC4"/>
                                             <include reference="UGg-hy-LkM"/>
                                             <include reference="zQE-h8-dQa"/>
-                                            <include reference="Hzt-i6-9TY"/>
-                                            <include reference="hBl-04-gJE"/>
                                             <include reference="7AK-AJ-Ry3"/>
                                             <include reference="JQd-Dr-WEM"/>
                                             <include reference="OIk-tO-6MH"/>
+                                            <include reference="Hzt-i6-9TY"/>
+                                            <include reference="hBl-04-gJE"/>
                                         </mask>
                                     </variation>
                                 </view>
@@ -758,22 +758,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nHK-qb-Ggx">
-                                <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="eKE-or-UHP"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="eKE-or-UHP"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="eKE-or-UHP"/>
-                                    </mask>
-                                </variation>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-ub-3U0">
                                 <rect key="frame" x="0.0" y="0.0" width="152" height="107"/>
                                 <constraints>
@@ -922,13 +906,11 @@
                             <constraint firstItem="qIg-dA-sWP" firstAttribute="top" secondItem="H8j-Z9-I4x" secondAttribute="bottom" constant="3" id="8qa-dO-r7c"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" id="Dkc-MW-bNn"/>
                             <constraint firstItem="eSc-EQ-H4D" firstAttribute="leading" secondItem="qIg-dA-sWP" secondAttribute="trailing" id="EG9-7p-nbc"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" constant="-1" id="EHK-BH-VkX"/>
                             <constraint firstItem="pe2-Tg-y0Y" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.59" constant="1" id="FjK-9e-19j"/>
                             <constraint firstItem="eSc-EQ-H4D" firstAttribute="top" secondItem="H8j-Z9-I4x" secondAttribute="bottom" constant="3" id="Ge1-P2-Exb"/>
                             <constraint firstItem="H8j-Z9-I4x" firstAttribute="centerX" secondItem="wa6-VR-j40" secondAttribute="centerX" id="LDN-hC-QZl"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" id="MKG-3o-VDF"/>
                             <constraint firstItem="7PU-ub-3U0" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.62" constant="1" id="Mwr-ua-EMT"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="trailing" multiplier="0.62" constant="1" id="NIj-Se-e4R"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="top" secondItem="x7h-9h-ogR" secondAttribute="bottom" id="PLg-cN-ljc"/>
                             <constraint firstItem="7PU-ub-3U0" firstAttribute="bottom" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="Rjl-9j-pln"/>
                             <constraint firstItem="c1c-xl-2CZ" firstAttribute="centerX" secondItem="wa6-VR-j40" secondAttribute="centerX" id="Rlj-CX-vUV"/>
@@ -936,7 +918,6 @@
                             <constraint firstItem="0Ut-oP-7x4" firstAttribute="leading" secondItem="eSc-EQ-H4D" secondAttribute="trailing" id="YFj-tQ-vAs"/>
                             <constraint firstItem="7PU-ub-3U0" firstAttribute="trailing" secondItem="wa6-VR-j40" secondAttribute="trailing" constant="-4" id="aXQ-Hb-XAs"/>
                             <constraint firstItem="YaZ-VD-PQC" firstAttribute="leading" secondItem="06Z-Ci-bde" secondAttribute="trailing" id="apB-fM-kTa"/>
-                            <constraint firstItem="nHK-qb-Ggx" firstAttribute="bottom" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="b9c-gm-mmC"/>
                             <constraint firstItem="ePQ-no-ynE" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" constant="40" id="bV0-3X-8oz"/>
                             <constraint firstItem="629-yZ-MJI" firstAttribute="leading" secondItem="wa6-VR-j40" secondAttribute="leading" id="eHP-3Q-E1t"/>
                             <constraint firstItem="ePQ-no-ynE" firstAttribute="top" secondItem="pe2-Tg-y0Y" secondAttribute="bottom" constant="-1" id="jL4-BE-vSJ"/>
@@ -953,7 +934,6 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="nHK-qb-Ggx"/>
                                 <exclude reference="7PU-ub-3U0"/>
                                 <exclude reference="qIg-dA-sWP"/>
                                 <exclude reference="eSc-EQ-H4D"/>
@@ -965,9 +945,6 @@
                                 <exclude reference="Mwr-ua-EMT"/>
                                 <exclude reference="Rjl-9j-pln"/>
                                 <exclude reference="aXQ-Hb-XAs"/>
-                                <exclude reference="EHK-BH-VkX"/>
-                                <exclude reference="NIj-Se-e4R"/>
-                                <exclude reference="b9c-gm-mmC"/>
                                 <exclude reference="7nI-co-arj"/>
                                 <exclude reference="tZN-Fk-1UX"/>
                                 <exclude reference="YFj-tQ-vAs"/>
@@ -1001,7 +978,6 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="nHK-qb-Ggx"/>
                                 <include reference="7PU-ub-3U0"/>
                                 <include reference="qIg-dA-sWP"/>
                                 <include reference="eSc-EQ-H4D"/>
@@ -1013,9 +989,6 @@
                                 <include reference="Mwr-ua-EMT"/>
                                 <include reference="Rjl-9j-pln"/>
                                 <include reference="aXQ-Hb-XAs"/>
-                                <include reference="EHK-BH-VkX"/>
-                                <include reference="NIj-Se-e4R"/>
-                                <include reference="b9c-gm-mmC"/>
                                 <include reference="7nI-co-arj"/>
                                 <include reference="tZN-Fk-1UX"/>
                                 <include reference="YFj-tQ-vAs"/>
@@ -1056,7 +1029,6 @@
                         <outlet property="dat" destination="3v9-kl-VEb" id="OTa-rB-0Cz"/>
                         <outlet property="des" destination="mif-Zp-0fr" id="NId-Ew-1p9"/>
                         <outlet property="loc" destination="ePQ-no-ynE" id="JWz-Ax-ZaR"/>
-                        <outlet property="mapView" destination="nHK-qb-Ggx" id="oEU-hR-Wgq"/>
                         <outlet property="recipeLabel" destination="H8j-Z9-I4x" id="E0G-TU-64y"/>
                         <outlet property="star1" destination="qIg-dA-sWP" id="WlZ-UD-5IT"/>
                         <outlet property="star2" destination="eSc-EQ-H4D" id="ZsQ-og-6el"/>
