@@ -8,9 +8,49 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="MY EVENTS" textAlignment="center" id="GQp-r5-RPg">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" spacing="3" id="7HM-A0-XA1">
+                            <items>
+                                <tableRow identifier="mainRowType" id="H6b-9d-M2J" customClass="Cell">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rih-iq-uM7">
+                                        <items>
+                                            <label width="125" alignment="left" text="Label" id="EAt-wI-RCN">
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.83903488010000005" green="0.83903488010000005" blue="0.83903488010000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowDescription" destination="EAt-wI-RCN" id="jCi-kJ-psg"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="7HM-A0-XA1" id="5v3-cF-Dfn"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="145" y="413"/>
+            <point key="canvasLocation" x="55" y="413"/>
+        </scene>
+        <!--second-->
+        <scene sceneID="mDU-GL-tVb">
+            <objects>
+                <controller identifier="second" hidesWhenLoading="NO" id="ahO-LN-KtV" customClass="secondInterfaceController">
+                    <items>
+                        <label width="136" height="72" alignment="left" id="ynD-Yt-Zn0"/>
+                    </items>
+                    <connections>
+                        <outlet property="eventName" destination="ynD-Yt-Zn0" id="YJI-qJ-RX5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="212" y="312"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

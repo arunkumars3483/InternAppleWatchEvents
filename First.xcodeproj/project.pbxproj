@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F423DF121B6A17E40036590C /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = F423DF111B6A17E40036590C /* Events.m */; };
+		F423DF151B6A23F50036590C /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F423DF141B6A23F50036590C /* PlaceAnnotation.m */; };
+		F423DF181B6A2A670036590C /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F423DF171B6A2A670036590C /* Event.m */; };
+		F423DF1A1B6A2C1E0036590C /* details.txt in Resources */ = {isa = PBXBuildFile; fileRef = F423DF191B6A2B810036590C /* details.txt */; };
+		F423DF1D1B6A33A90036590C /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = F423DF1C1B6A33A90036590C /* Cell.m */; };
 		F42C096B1B5E032600CECFB8 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = F42C096A1B5E032600CECFB8 /* Event.m */; };
 		F42C096E1B5E143500CECFB8 /* CalController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42C096D1B5E143500CECFB8 /* CalController.m */; };
 		F42C09A11B5E55CE00CECFB8 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F42C096F1B5E276E00CECFB8 /* images */; };
 		F42C09A21B5E55E200CECFB8 /* main.m in Resources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F44646D01B577F34003A3296 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646CF1B577F34003A3296 /* CoreLocation.framework */; };
 		F44646D21B577F52003A3296 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44646D11B577F52003A3296 /* MapKit.framework */; };
-		F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F44646D61B578EF8003A3296 /* PlaceAnnotation.m */; };
 		F4477C901B54ECE50062C2A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C8F1B54ECE50062C2A5 /* main.m */; };
 		F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C921B54ECE50062C2A5 /* AppDelegate.m */; };
 		F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477C951B54ECE50062C2A5 /* ViewController.m */; };
@@ -25,7 +29,7 @@
 		F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */; };
 		F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */; };
 		F45B50401B5FBBA70025DA04 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45B503F1B5FBBA70025DA04 /* WatchKit.framework */; };
-		F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* Events.xcdatamodeld */; };
+		F463C4191B5A71A6009944BD /* First.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463C4171B5A71A6009944BD /* First.xcdatamodeld */; };
 		F4827FC71B60C88F00C3CA49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC61B60C88F00C3CA49 /* InterfaceController.m */; };
 		F4827FCA1B60C88F00C3CA49 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4827FC91B60C88F00C3CA49 /* NotificationController.m */; };
 		F4827FCC1B60C88F00C3CA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */; };
@@ -37,6 +41,7 @@
 		F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AFC5E01B56816600A5F9C7 /* DetailsViewController.m */; };
 		F4D657DC1B563D57004D7D24 /* details.txt in Resources */ = {isa = PBXBuildFile; fileRef = F4D657DB1B562D8A004D7D24 /* details.txt */; };
 		F4DE45351B61E9920098F175 /* ReminderController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DE45341B61E9920098F175 /* ReminderController.m */; };
+		F4DF49861B6B257000B19BE8 /* secondInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F40E1CE81B6B434300AA5198 /* First.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = First.entitlements; path = First/First.entitlements; sourceTree = "<group>"; };
+		F423DF101B6A17E40036590C /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Events.h; path = ../Events.h; sourceTree = "<group>"; };
+		F423DF111B6A17E40036590C /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Events.m; path = ../Events.m; sourceTree = "<group>"; };
+		F423DF131B6A23F50036590C /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceAnnotation.h; sourceTree = "<group>"; };
+		F423DF141B6A23F50036590C /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceAnnotation.m; sourceTree = "<group>"; };
+		F423DF161B6A2A670036590C /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		F423DF171B6A2A670036590C /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		F423DF191B6A2B810036590C /* details.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = details.txt; sourceTree = "<group>"; };
+		F423DF1B1B6A33A90036590C /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		F423DF1C1B6A33A90036590C /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		F42C09691B5E032600CECFB8 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		F42C096A1B5E032600CECFB8 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		F42C096C1B5E143500CECFB8 /* CalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalController.h; sourceTree = "<group>"; };
@@ -92,8 +107,6 @@
 		F42C096F1B5E276E00CECFB8 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = First/images; sourceTree = "<group>"; };
 		F44646CF1B577F34003A3296 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F44646D11B577F52003A3296 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		F44646D51B578EF8003A3296 /* PlaceAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceAnnotation.h; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.h; sourceTree = "<group>"; };
-		F44646D61B578EF8003A3296 /* PlaceAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceAnnotation.m; path = ../../../Downloads/MapSearch/Classes/PlaceAnnotation.m; sourceTree = "<group>"; };
 		F4477C8B1B54ECE50062C2A5 /* First.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4477C8F1B54ECE50062C2A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4477C911B54ECE50062C2A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,7 +128,9 @@
 		F44E316C1B57B72A008BDE65 /* MapScreenControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapScreenControllerViewController.h; sourceTree = "<group>"; };
 		F44E316D1B57B72A008BDE65 /* MapScreenControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapScreenControllerViewController.m; sourceTree = "<group>"; };
 		F45B503F1B5FBBA70025DA04 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
-		F463C4181B5A71A6009944BD /* Events.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
+		F463C4181B5A71A6009944BD /* First.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = First.xcdatamodel; sourceTree = "<group>"; };
+		F46D95DE1B6B45DD00EF5D3C /* First WatchKit 1 Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "First WatchKit 1 Extension.entitlements"; sourceTree = "<group>"; };
+		F46D95DF1B6B461600EF5D3C /* First WatchKit 1 App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "First WatchKit 1 App.entitlements"; sourceTree = "<group>"; };
 		F4827FC11B60C88F00C3CA49 /* First WatchKit 1 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "First WatchKit 1 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4827FC41B60C88F00C3CA49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		F4827FC51B60C88F00C3CA49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -134,6 +149,8 @@
 		F4D657DB1B562D8A004D7D24 /* details.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = details.txt; sourceTree = "<group>"; };
 		F4DE45331B61E9920098F175 /* ReminderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderController.h; sourceTree = "<group>"; };
 		F4DE45341B61E9920098F175 /* ReminderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderController.m; sourceTree = "<group>"; };
+		F4DF49841B6B257000B19BE8 /* secondInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondInterfaceController.h; sourceTree = "<group>"; };
+		F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +226,7 @@
 				F4477C971B54ECE50062C2A5 /* Main.storyboard */,
 				F4477C9A1B54ECE50062C2A5 /* Assets.xcassets */,
 				F4477C8E1B54ECE50062C2A5 /* Supporting Files */,
-				F463C4171B5A71A6009944BD /* Events.xcdatamodeld */,
+				F463C4171B5A71A6009944BD /* First.xcdatamodeld */,
 				F4477C9F1B54ECE50062C2A5 /* Info.plist */,
 			);
 			path = First;
@@ -245,6 +262,7 @@
 		F4827FC21B60C88F00C3CA49 /* First WatchKit 1 Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F46D95DE1B6B45DD00EF5D3C /* First WatchKit 1 Extension.entitlements */,
 				F4827FC51B60C88F00C3CA49 /* InterfaceController.h */,
 				F4827FC61B60C88F00C3CA49 /* InterfaceController.m */,
 				F4827FC81B60C88F00C3CA49 /* NotificationController.h */,
@@ -252,6 +270,12 @@
 				F4827FCB1B60C88F00C3CA49 /* Assets.xcassets */,
 				F4827FCD1B60C88F00C3CA49 /* Info.plist */,
 				F4827FC31B60C88F00C3CA49 /* Supporting Files */,
+				F423DF161B6A2A670036590C /* Event.h */,
+				F423DF171B6A2A670036590C /* Event.m */,
+				F423DF1B1B6A33A90036590C /* Cell.h */,
+				F423DF1C1B6A33A90036590C /* Cell.m */,
+				F4DF49841B6B257000B19BE8 /* secondInterfaceController.h */,
+				F4DF49851B6B257000B19BE8 /* secondInterfaceController.m */,
 			);
 			path = "First WatchKit 1 Extension";
 			sourceTree = "<group>";
@@ -261,6 +285,7 @@
 			children = (
 				F4827FC41B60C88F00C3CA49 /* PushNotificationPayload.apns */,
 				F4827FE41B60D66300C3CA49 /* mynoti.apns */,
+				F423DF191B6A2B810036590C /* details.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,6 +293,7 @@
 		F4827FD41B60C88F00C3CA49 /* First WatchKit 1 App */ = {
 			isa = PBXGroup;
 			children = (
+				F46D95DF1B6B461600EF5D3C /* First WatchKit 1 App.entitlements */,
 				F4827FD51B60C88F00C3CA49 /* Interface.storyboard */,
 				F4827FD81B60C88F00C3CA49 /* Assets.xcassets */,
 				F4827FDA1B60C88F00C3CA49 /* Info.plist */,
@@ -278,6 +304,7 @@
 		F4DE45361B6262D00098F175 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				F40E1CE81B6B434300AA5198 /* First.entitlements */,
 				F42C096F1B5E276E00CECFB8 /* images */,
 				F4477C8D1B54ECE50062C2A5 /* First */,
 			);
@@ -304,12 +331,14 @@
 		F4DE45381B6263DB0098F175 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				F44646D51B578EF8003A3296 /* PlaceAnnotation.h */,
-				F44646D61B578EF8003A3296 /* PlaceAnnotation.m */,
+				F423DF131B6A23F50036590C /* PlaceAnnotation.h */,
+				F423DF141B6A23F50036590C /* PlaceAnnotation.m */,
 				F4477CEA1B5527CA0062C2A5 /* SimpleTableCell.h */,
 				F4477CEB1B5527CA0062C2A5 /* SimpleTableCell.m */,
 				F42C09691B5E032600CECFB8 /* Event.h */,
 				F42C096A1B5E032600CECFB8 /* Event.m */,
+				F423DF101B6A17E40036590C /* Events.h */,
+				F423DF111B6A17E40036590C /* Events.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -416,6 +445,12 @@
 				TargetAttributes = {
 					F4477C8A1B54ECE50062C2A5 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Z3GEUSFAX6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F4477CA31B54ECE50062C2A5 = {
 						CreatedOnToolsVersion = 7.0;
@@ -427,9 +462,21 @@
 					};
 					F4827FC01B60C88F00C3CA49 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Z3GEUSFAX6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F4827FCF1B60C88F00C3CA49 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Z3GEUSFAX6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -487,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F423DF1A1B6A2C1E0036590C /* details.txt in Resources */,
 				F4827FD11B60C88F00C3CA49 /* First WatchKit 1 App.app in Resources */,
 				F4827FE51B60D66300C3CA49 /* mynoti.apns in Resources */,
 				F4827FCC1B60C88F00C3CA49 /* Assets.xcassets in Resources */,
@@ -509,14 +557,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F463C4191B5A71A6009944BD /* Events.xcdatamodeld in Sources */,
+				F423DF121B6A17E40036590C /* Events.m in Sources */,
+				F463C4191B5A71A6009944BD /* First.xcdatamodeld in Sources */,
 				F4DE45351B61E9920098F175 /* ReminderController.m in Sources */,
 				F4477C961B54ECE50062C2A5 /* ViewController.m in Sources */,
 				F42C096B1B5E032600CECFB8 /* Event.m in Sources */,
 				F4AFC5E11B56816600A5F9C7 /* DetailsViewController.m in Sources */,
-				F44646D71B578EF8003A3296 /* PlaceAnnotation.m in Sources */,
 				F4477C931B54ECE50062C2A5 /* AppDelegate.m in Sources */,
 				F4477CEC1B5527CA0062C2A5 /* SimpleTableCell.m in Sources */,
+				F423DF151B6A23F50036590C /* PlaceAnnotation.m in Sources */,
 				F4477C901B54ECE50062C2A5 /* main.m in Sources */,
 				F42C096E1B5E143500CECFB8 /* CalController.m in Sources */,
 				F44E316E1B57B72A008BDE65 /* MapScreenControllerViewController.m in Sources */,
@@ -543,7 +592,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F423DF181B6A2A670036590C /* Event.m in Sources */,
+				F423DF1D1B6A33A90036590C /* Cell.m in Sources */,
 				F4827FCA1B60C88F00C3CA49 /* NotificationController.m in Sources */,
+				F4DF49861B6B257000B19BE8 /* secondInterfaceController.m in Sources */,
 				F4827FC71B60C88F00C3CA49 /* InterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -618,7 +670,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: PRATHAPAN SETHUMAPHAVAN (YBMVHB2Q9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: PRATHAPAN SETHUMAPHAVAN (YBMVHB2Q9N)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -637,9 +690,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c3f0de30-0eaa-450a-b372-1dd5be5b43e4";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -661,7 +715,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: PRATHAPAN SETHUMAPHAVAN (YBMVHB2Q9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: PRATHAPAN SETHUMAPHAVAN (YBMVHB2Q9N)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -674,8 +729,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c3f0de30-0eaa-450a-b372-1dd5be5b43e4";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -685,11 +741,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = First/First.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = First/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -698,11 +758,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = First/First.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = First/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -759,11 +823,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "First WatchKit 1 App/First WatchKit 1 App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				IBSC_MODULE = First_WatchKit_1_Extension;
 				INFOPLIST_FILE = "First WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -774,11 +842,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "First WatchKit 1 App/First WatchKit 1 App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				IBSC_MODULE = First_WatchKit_1_Extension;
 				INFOPLIST_FILE = "First WatchKit 1 App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -788,10 +860,14 @@
 		F4827FE21B60C88F00C3CA49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "First WatchKit 1 Extension/First WatchKit 1 Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "First WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -799,10 +875,14 @@
 		F4827FE31B60C88F00C3CA49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "First WatchKit 1 Extension/First WatchKit 1 Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "First WatchKit 1 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.firstios.arun.First.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qburst.First.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -867,13 +947,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F463C4171B5A71A6009944BD /* Events.xcdatamodeld */ = {
+		F463C4171B5A71A6009944BD /* First.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F463C4181B5A71A6009944BD /* Events.xcdatamodel */,
+				F463C4181B5A71A6009944BD /* First.xcdatamodel */,
 			);
-			currentVersion = F463C4181B5A71A6009944BD /* Events.xcdatamodel */;
-			path = Events.xcdatamodeld;
+			currentVersion = F463C4181B5A71A6009944BD /* First.xcdatamodel */;
+			path = First.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.firstios.arun.First</string>
+	<string>com.qburst2.First</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

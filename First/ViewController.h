@@ -19,7 +19,6 @@
 }
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-
-
+@property (strong) NSMutableArray *devices;
 @end
 

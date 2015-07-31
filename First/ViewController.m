@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SimpleTableCell.h"
 #import "DetailsViewController.h"
+#import <CoreData/CoreData.h>
 @interface ViewController ()
 
 @end
@@ -16,10 +17,54 @@
 @implementation ViewController
 @synthesize tableView;
 
+
+
+- (NSManagedObjectContext *)managedObjectContext {
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
+    
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // Create a new managed object
+    NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Events" inManagedObjectContext:context];
+    [newDevice setValue:@"mecca" forKey:@"name"];
+    /*
+    [newDevice setValue:@"hee" forKey:@"version"];
+    [newDevice setValue:@"hee" forKey:@"company"];
+    [newDevice setValue:@"mecca" forKey:@"name"];
+    [newDevice setValue:@"hee" forKey:@"version"];
+    [newDevice setValue:@"hee" forKey:@"company"];
+    [newDevice setValue:@"mecca" forKey:@"name"];
+    [newDevice setValue:@"hee" forKey:@"version"];
+    */
+    
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    
+    // Fetch the devices from persistent data store
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Events"];
+    self.devices = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    
+    
+    NSManagedObject *device = [self.devices objectAtIndex:0];
+    NSLog(@"get it : %@",[device valueForKey:@"name"]);
     
     events=[[NSMutableArray alloc] init];
     

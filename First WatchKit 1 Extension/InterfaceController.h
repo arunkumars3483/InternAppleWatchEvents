@@ -10,5 +10,6 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
-
+@property(nonatomic,weak) IBOutlet WKInterfaceLabel *ev;
+@property (weak, nonatomic) IBOutlet WKInterfaceTable* table;
 @end
