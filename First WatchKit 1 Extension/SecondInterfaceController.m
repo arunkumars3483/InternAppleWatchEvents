@@ -6,10 +6,10 @@
 //  Copyright © 2015 Arun Kumar. All rights reserved.
 //
 
-#import "secondInterfaceController.h"
+#import "SecondInterfaceController.h"
 #import "Event.h"
 #import<CoreData/CoreData.h>
-@interface secondInterfaceController ()
+@interface SecondInterfaceController ()
 {
     Event *t;
 
@@ -17,7 +17,7 @@
 }
 @end
 
-@implementation secondInterfaceController
+@implementation SecondInterfaceController
 @synthesize eventName;
 @synthesize eventDate;
 @synthesize eventLocation;

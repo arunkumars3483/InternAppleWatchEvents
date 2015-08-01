@@ -9,7 +9,7 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface secondInterfaceController : WKInterfaceController
+@interface SecondInterfaceController : WKInterfaceController
 
 
 @property(nonatomic,weak) IBOutlet WKInterfaceLabel *eventName;
