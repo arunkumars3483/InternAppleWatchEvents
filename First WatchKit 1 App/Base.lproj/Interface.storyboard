@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--first-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller identifier="first" id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
                         <label width="1" alignment="left" text="MY EVENTS" textAlignment="center" id="GQp-r5-RPg">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
@@ -18,25 +18,24 @@
                                 <tableRow identifier="mainRowType" id="H6b-9d-M2J" customClass="Cell">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="rih-iq-uM7">
                                         <items>
-                                            <label width="125" alignment="left" text="Label" id="EAt-wI-RCN">
+                                            <label width="125" alignment="left" text="Label" textAlignment="left" id="EAt-wI-RCN">
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                             </label>
-                                            <group width="1" alignment="left" id="DG9-3M-cMM">
-                                                <items>
-                                                    <imageView width="24" height="21" alignment="left" image="tim" id="YE1-v2-Dra"/>
-                                                    <label width="95" height="22" alignment="left" text="Label" id="xij-WQ-VTS"/>
-                                                </items>
-                                            </group>
                                             <group width="1" alignment="left" id="u1a-Wp-GX4">
                                                 <items>
-                                                    <imageView width="24" height="21" alignment="left" image="date" id="xnR-lR-USo"/>
-                                                    <label width="95" height="22" alignment="left" text="Label" id="Orx-pa-aWb"/>
+                                                    <imageView width="22" height="19" alignment="left" image="date" id="xnR-lR-USo"/>
+                                                    <label width="95" height="22" alignment="left" text="Label" id="Orx-pa-aWb">
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                    </label>
                                                 </items>
                                             </group>
                                         </items>
                                         <color key="backgroundColor" red="0.83903488010000005" green="0.83903488010000005" blue="0.83903488010000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
                                     <connections>
+                                        <outlet property="eventDate" destination="Orx-pa-aWb" id="tM2-aC-8lw"/>
                                         <outlet property="rowDescription" destination="EAt-wI-RCN" id="jCi-kJ-psg"/>
                                     </connections>
                                 </tableRow>
@@ -44,6 +43,7 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="ev" destination="GQp-r5-RPg" id="sVE-fn-30e"/>
                         <outlet property="table" destination="7HM-A0-XA1" id="5v3-cF-Dfn"/>
                     </connections>
                 </controller>
@@ -55,10 +55,55 @@
             <objects>
                 <controller identifier="second" hidesWhenLoading="NO" id="ahO-LN-KtV" customClass="secondInterfaceController">
                     <items>
-                        <label width="136" height="72" alignment="left" id="ynD-Yt-Zn0"/>
+                        <label width="1" height="33" alignment="left" textAlignment="center" id="ynD-Yt-Zn0">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <group width="1" alignment="left" id="WLn-Va-Jca">
+                            <items>
+                                <imageView width="24" height="1" alignment="left" image="date" id="bQg-pH-tHr"/>
+                                <label width="108" alignment="left" text="loading. . ." id="WFA-at-E4f">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <group width="1" alignment="left" id="lr5-ON-FeM">
+                            <items>
+                                <imageView width="24" height="1" alignment="left" image="tim" id="BNF-rT-AWY"/>
+                                <label width="108" alignment="left" text="loading. . ." id="uI1-80-M0z">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <group width="1" alignment="left" id="oKt-Fu-skF">
+                            <items>
+                                <imageView width="24" height="1" alignment="left" image="location" id="M6J-6Z-Rie">
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label width="108" alignment="left" text="loading. . ." id="XN8-oq-UYQ">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <button width="1" alignment="left" title="Unsubscribe" id="mUo-J7-CJh">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.83903488010000005" green="0.83903488010000005" blue="0.83903488010000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="unsubscribe" destination="ahO-LN-KtV" id="Wne-oS-f6Z"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="eventDate" destination="WFA-at-E4f" id="v3a-rx-dVO"/>
+                        <outlet property="eventLocation" destination="XN8-oq-UYQ" id="ksw-mk-8xI"/>
                         <outlet property="eventName" destination="ynD-Yt-Zn0" id="YJI-qJ-RX5"/>
+                        <outlet property="eventTime" destination="uI1-80-M0z" id="HGA-o5-lWK"/>
                     </connections>
                 </controller>
             </objects>

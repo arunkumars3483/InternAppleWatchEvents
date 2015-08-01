@@ -10,4 +10,5 @@
 
 @implementation Cell
 @synthesize rowDescription;
+@synthesize eventDate;
 @end

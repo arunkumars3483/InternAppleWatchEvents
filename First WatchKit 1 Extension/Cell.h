@@ -11,5 +11,6 @@
 
 @interface Cell : NSObject
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel* rowDescription;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel* eventDate;
 
 @end

@@ -13,4 +13,8 @@
 
 
 @property(nonatomic,weak) IBOutlet WKInterfaceLabel *eventName;
+@property(nonatomic,weak) IBOutlet WKInterfaceLabel *eventLocation;
+@property(nonatomic,weak) IBOutlet WKInterfaceLabel *eventTime;
+@property(nonatomic,weak) IBOutlet WKInterfaceLabel *eventDate;
+
 @end
